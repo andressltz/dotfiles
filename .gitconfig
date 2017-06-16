@@ -9,6 +9,7 @@
 	co = checkout
 	br = !sh -c 'git branch $1 && git checkout $1' -
 	brd = !sh -c 'git branch -D $1 && git branch' -
+	limpa = remote update --prune
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
