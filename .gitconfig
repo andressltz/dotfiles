@@ -10,6 +10,8 @@
 	br = !sh -c 'git branch $1 && git checkout $1' -
 	brd = !sh -c 'git branch -D $1 && git branch' -
 	limpa = remote update --prune
+	limpare = branch -D `git branch | grep -E 'releaser*'`
+	#git branch -D `git branch | grep -E 'releaser*'`
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
@@ -26,3 +28,5 @@
 	oldHighlight = "red bold 52"
 	newNormal = "green bold"
 	newHighlight = "green bold 22"
+[winUpdater]
+	recentlySeenVersion = 2.15.1.windows.2
