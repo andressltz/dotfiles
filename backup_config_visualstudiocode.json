@@ -1,9 +1,18 @@
-// Place your settings in this file to overwrite the default settings
 {
-    "editor.fontSize": 13,
     "workbench.iconTheme": "vscode-icons",
-    "vsicons.projectDetection.disableDetect": true,
-    "python.linting.enabled": false,
-    "editor.tabSize": 2,
-    "workbench.editor.tabSizing": "shrink"
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "workbench.editor.revealIfOpen": true,
+    "workbench.editor.tabSizing": "shrink",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "gitlens.historyExplorer.enabled": true,
+    "editor.tabSize": 2
 }
