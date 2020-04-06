@@ -11,9 +11,9 @@
 	brd = !sh -c 'git branch -D $1 && git branch' -
 	limpa = remote update --prune
 	limpare = branch -D `git branch | grep -E 'releaser*'`
-	#git branch -D `git branch | grep -E 'releaser*'`
+	rem = !sh -c 'git reset HEAD $1 && git status' -
 [core]
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	#pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
 	ui = always
 [color "diff"]
@@ -28,5 +28,3 @@
 	oldHighlight = "red bold 52"
 	newNormal = "green bold"
 	newHighlight = "green bold 22"
-[winUpdater]
-	recentlySeenVersion = 2.15.1.windows.2
