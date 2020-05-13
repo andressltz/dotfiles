@@ -12,6 +12,7 @@
 	limpa = remote update --prune
 	limpare = branch -D `git branch | grep -E 'releaser*'`
 	rem = !sh -c 'git reset HEAD $1 && git status' -
+	logg = log --graph --date=short --pretty=format:'%Cred%h %Cblue%ad%Creset |%C(yellow)%d%Creset %s %Cblue[%an]'
 [core]
 	#pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
