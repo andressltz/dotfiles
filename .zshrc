@@ -11,6 +11,7 @@ export ZSH="/Users/andres/.oh-my-zsh"
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="agnoster"
 #ZSH_THEME="../../dev/term/my-zsh-theme/agnoster"
+#export DEFAULT_USER="$(whoami)"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -74,6 +75,8 @@ plugins=(
   git
   thefuck
   vscode
+  # zsh-syntax-highlighting (não testado)
+  # zsh-autosuggestions (não testado)
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -103,6 +106,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# WSL alias
+# alias morning=". ~/bomdia.sh"
+# alias hybris="sh ~/dev/arezzo/ecommerce/hybris/bin/platform/hybrisserver.sh debug"
+# alias intellij="sh /home/andreswinck/dev/tools/intellij/bin/idea.sh"
+# alias lsh="ls -lah"
+# alias chrome="google-chrome"
+# alias limpa="echo 1 | sudo tee /proc/sys/vm/drop_caches"
+# alias ip="ip add"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
