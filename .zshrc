@@ -76,7 +76,7 @@ plugins=(
   thefuck
   vscode
   # zsh-syntax-highlighting (não testado)
-  # zsh-autosuggestions (não testado)
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
