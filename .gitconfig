@@ -4,7 +4,7 @@
 	smudge = git-lfs smudge -- %f
 [user]
 	name = Ândres Winck Schultz
-	email = andreswinck@cwi.com.br
+	email = andreswinck@domain.com.br
 [alias]
 	co = checkout
 	br = !sh -c 'git branch $1 && git checkout $1' -
@@ -13,19 +13,24 @@
 	limpare = branch -D `git branch | grep -E 'releaser*'`
 	rem = !sh -c 'git reset HEAD $1 && git status' -
 	logg = log --graph --date=short --pretty=format:'%Cred%h %Cblue%ad%Creset |%C(yellow)%d%Creset %s %Cblue[%an]'
+	res = reset --hard HEAD
 [core]
-	#pager = diff-so-fancy | less --tabs=4 -RFX
+	editor = nano
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
-	ui = always
+	ui = true
 [color "diff"]
-	meta = yellow bold
-	commit = green bold
+	meta = 11
+	commit = yellow bold
 	frag = magenta bold
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+	func = 146 bold
+[interactive]
+	diffFilter = diff-so-fancy --patch
 [color "diff-highlight"]
 	oldNormal = red bold
-	oldHighlight = "red bold 52"
-	newNormal = "green bold"
-	newHighlight = "green bold 22"
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22

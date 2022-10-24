@@ -128,3 +128,27 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # export NVM_DIR="$HOME/.nvm"
 # export PATH=$PATH:~/opt/binexport PATH="/usr/local/opt/ruby/bin:$PATH"
+
+# for work
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
+export JAVA_17_HOME=$(/usr/libexec/java_home -v17)
+
+alias java11='export JAVA_HOME=$JAVA_11_HOME'
+alias java17='export JAVA_HOME=$JAVA_17_HOME'
+alias fullbuild='java11 && hybrisbin && ./fullbuild.sh'
+alias hybris='java11 && hybrisbin && ./hybrisserver.sh debug'
+alias hybrisbin='hybrisdir && cd bin/platform'
+alias hybrisdir='cd ~/dev/arezzo/hybris2011/hybris/'
+alias dev='cd ~/dev/'
+alias buildfront='nvm use 10 && hybrisdir && cd bin/custom/arezzocostorefront/web/webroot/_ui/desktop/front-vendors && yarn build'
+alias buildtheme='nvm use 10 && hybrisdir && cd bin/custom/arezzocostorefront/web/webroot/_ui/desktop/theme-marketplacezz && yarn build'
+alias wakeup='caffeinate -d'
+alias wakeup1='caffeinate -d -t 3600'
+alias wakeup2='caffeinate -d -t 7200'
+alias wakeup3='caffeinate -d -t 10800'
+alias sshconnect='sshpass -p "pss" ssh -oStrictHostKeyChecking=no "usr"@"host" -p "port"'
+alias week='date +%V'
+alias localip="ipconfig getifaddr en0"
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
