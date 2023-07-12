@@ -116,6 +116,11 @@ source $ZSH/oh-my-zsh.sh
 # alias limpa="echo 1 | sudo tee /proc/sys/vm/drop_caches"
 # alias ip="ip add"
 
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -126,15 +131,16 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-# export NVM_DIR="$HOME/.nvm"
-# export PATH=$PATH:~/opt/binexport PATH="/usr/local/opt/ruby/bin:$PATH"
-
 # for work
 export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
 export JAVA_17_HOME=$(/usr/libexec/java_home -v17)
 
+# Disable homebrew auto-update when install a new formula
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 alias java11='export JAVA_HOME=$JAVA_11_HOME'
 alias java17='export JAVA_HOME=$JAVA_17_HOME'
+alias antall='java11 && hybrisbin && . ./setantenv.sh && ant all'
 alias fullbuild='java11 && hybrisbin && ./fullbuild.sh'
 alias hybris='java11 && hybrisbin && ./hybrisserver.sh debug'
 alias hybrisbin='hybrisdir && cd bin/platform'
@@ -152,3 +158,4 @@ alias localip="ipconfig getifaddr en0"
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+alias ponto="~/dev/cwi/update-working-hours && yarn start"
