@@ -159,3 +159,5 @@ alias localip="ipconfig getifaddr en0"
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 alias ponto="~/dev/cwi/update-working-hours && yarn start"
+# npm install -g http-server
+alias server="http-server -c-1"
