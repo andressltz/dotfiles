@@ -1,0 +1,13 @@
+<application>
+  <component name="IgnoredPluginSuggestions">
+    <option name="pluginIds">
+      <list>
+        <option value="ccom.intellij.idea.plugin.hybris.impex" />
+        <option value="com.intellij.guice" />
+        <option value="com.intellij.selenium" />
+        <option value="org.jetbrains.plugins.stylus" />
+        <option value="com.intellij.aqua" />
+      </list>
+    </option>
+  </component>
+</application>

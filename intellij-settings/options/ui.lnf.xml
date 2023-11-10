@@ -1,0 +1,9 @@
+<application>
+  <component name="UISettings">
+    <option name="EDITOR_TAB_LIMIT" value="30" />
+    <option name="HIDE_KNOWN_EXTENSION_IN_TABS" value="true" />
+    <option name="MAX_LOOKUP_LIST_HEIGHT" value="19" />
+    <option name="MAX_LOOKUP_WIDTH2" value="758" />
+    <option name="SHOW_PINNED_TABS_IN_A_SEPARATE_ROW" value="true" />
+  </component>
+</application>

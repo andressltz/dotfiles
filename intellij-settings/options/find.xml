@@ -1,0 +1,20 @@
+<application>
+  <component name="FindSettings">
+    <option name="customScope" value="[y] Custom" />
+    <option name="defaultScopeName" value="[y] Custom" />
+    <option name="SEARCH_SCOPE" value="[y] Custom" />
+    <mask>*.css</mask>
+    <mask>*.html</mask>
+    <mask>*.jsp</mask>
+    <mask>*.vm</mask>
+    <mask>*Action*.java</mask>
+    <mask>*Test.java</mask>
+    <mask>*Populator.java</mask>
+    <mask>*Controller.java</mask>
+    <mask>*.yml</mask>
+    <mask>*.impex</mask>
+    <mask>*.java</mask>
+    <mask>*.properties</mask>
+    <mask>*.xml</mask>
+  </component>
+</application>
