@@ -16,6 +16,9 @@
 	res = reset --hard HEAD
 [core]
 	editor = nano
+	# editor = mate -w
+	# editor = subl -n -w
+	# editor = code --wait
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
 	ui = true
@@ -34,3 +37,5 @@
 	oldHighlight = red bold 52
 	newNormal = green bold
 	newHighlight = green bold 22
+[push]
+	autoSetupRemote = true

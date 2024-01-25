@@ -145,7 +145,6 @@ alias fullbuild='java11 && hybrisbin && ./fullbuild.sh'
 alias hybris='java11 && hybrisbin && ./hybrisserver.sh debug'
 alias hybrisbin='hybrisdir && cd bin/platform'
 alias hybrisdir='cd ~/dev/arezzo/hybris2011/hybris/'
-alias dev='cd ~/dev/'
 alias buildfront='nvm use 10 && hybrisdir && cd bin/custom/arezzocostorefront/web/webroot/_ui/desktop/front-vendors && yarn build'
 alias buildtheme='nvm use 10 && hybrisdir && cd bin/custom/arezzocostorefront/web/webroot/_ui/desktop/theme-marketplacezz && yarn build'
 alias wakeup='caffeinate -d'
@@ -164,3 +163,4 @@ alias ponto="~/dev/cwi/update-working-hours && yarn start"
 # npm install -g http-server
 alias server="http-server -c-1"
 alias killtomcat="ps -ef | grep -i tomcat | grep -v grep | awk '{ print "kill -9 " $2}'|zsh"
+alias intellij="open -na \"IntelliJ IDEA.app\""
