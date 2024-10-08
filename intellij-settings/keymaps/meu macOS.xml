@@ -1,0 +1,10 @@
+<keymap version="1" name="meu macOS" parent="Mac OS X 10.5+">
+  <action id="EvaluateExpression">
+    <keyboard-shortcut first-keystroke="meta i" />
+  </action>
+  <action id="Move" />
+  <action id="Resume">
+    <keyboard-shortcut first-keystroke="f9" />
+  </action>
+  <action id="StepOut" />
+</keymap>

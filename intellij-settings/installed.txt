@@ -1,0 +1,3 @@
+com.intellij.properties.bundle.editor
+com.github.kisstkondoros.codemetrics
+com.intellij.idea.plugin.sap.commerce
