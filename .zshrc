@@ -72,9 +72,7 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
   thefuck
-  vscode
   # zsh-syntax-highlighting (não testado)
   zsh-autosuggestions
 )
@@ -137,6 +135,7 @@ export JAVA_17_HOME=$(/usr/libexec/java_home -v17)
 
 # Disable homebrew auto-update when install a new formula
 export HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
 
 alias java11='export JAVA_HOME=$JAVA_11_HOME'
 alias java17='export JAVA_HOME=$JAVA_17_HOME'
@@ -159,7 +158,7 @@ alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && kill
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-alias ponto="~/dev/cwi/update-working-hours && yarn start"
+alias zshconfig="mate ~/.zshrc"
 # npm install -g http-server
 alias server="http-server -c-1"
 alias killtomcat="ps -ef | grep -i tomcat | grep -v grep | awk '{ print "kill -9 " $2}'|zsh"
