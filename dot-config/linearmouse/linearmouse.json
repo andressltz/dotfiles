@@ -1,0 +1,141 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
+  "schemes" : [
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "vendorID" : "0x30fa",
+          "productName" : "USB GAMING MOUSE ",
+          "productID" : "0x1701"
+        }
+      },
+      "buttons" : {
+        "universalBackForward" : false,
+        "mappings" : [
+          {
+            "option" : false,
+            "action" : "appExpose",
+            "repeat" : false,
+            "button" : 2,
+            "shift" : false,
+            "command" : true,
+            "control" : false
+          },
+          {
+            "button" : 3,
+            "command" : false,
+            "shift" : false,
+            "control" : false,
+            "repeat" : false,
+            "option" : false,
+            "action" : "missionControl.spaceRight"
+          },
+          {
+            "shift" : false,
+            "control" : false,
+            "command" : true,
+            "option" : false,
+            "button" : 3,
+            "action" : "missionControl"
+          },
+          {
+            "command" : false,
+            "action" : "missionControl.spaceLeft",
+            "shift" : false,
+            "option" : false,
+            "button" : 4,
+            "control" : false
+          }
+        ]
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        },
+        "reverse" : {
+          "vertical" : true
+        },
+        "speed" : {
+          "vertical" : 0
+        },
+        "modifiers" : {
+          "vertical" : {
+            "option" : {
+              "type" : "alterOrientation"
+            },
+            "command" : {
+              "type" : "zoom"
+            },
+            "control" : {
+              "type" : "preventDefault"
+            }
+          }
+        },
+        "distance" : {
+          "vertical" : "36px"
+        }
+      }
+    },
+    {
+      "buttons" : {
+        "mappings" : [
+          {
+            "control" : false,
+            "option" : false,
+            "command" : false,
+            "action" : {
+              "keyPress" : [
+                "shift",
+                "command",
+                "m"
+              ]
+            },
+            "button" : 2,
+            "shift" : false
+          }
+        ]
+      },
+      "if" : {
+        "app" : "com.microsoft.teams2",
+        "device" : {
+          "category" : "mouse",
+          "vendorID" : "0x30fa",
+          "productID" : "0x1701",
+          "productName" : "USB GAMING MOUSE "
+        }
+      }
+    },
+    {
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        }
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x5ac",
+          "productID" : "0x342",
+          "category" : "trackpad",
+          "productName" : "Apple Internal Keyboard \/ Trackpad"
+        }
+      }
+    },
+    {
+      "if" : {
+        "app" : "com.jordanbaird.Ice",
+        "device" : {
+          "productID" : "0x342",
+          "productName" : "Apple Internal Keyboard \/ Trackpad",
+          "category" : "trackpad",
+          "vendorID" : "0x5ac"
+        }
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        }
+      }
+    }
+  ]
+}
