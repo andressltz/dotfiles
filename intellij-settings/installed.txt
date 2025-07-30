@@ -1,3 +1,8 @@
 com.intellij.properties.bundle.editor
 com.github.kisstkondoros.codemetrics
-com.intellij.idea.plugin.sap.commerce
+com.jetbrains.jax.ws
+com.intellij.ml.llm
+com.clutcher.comments_highlighter
+uk.co.ben-gibson.remote.repository.mapper
+org.sonarlint.idea
+cn.yiiguxing.plugin.translate

@@ -1,7 +1,9 @@
 <application>
   <component name="UISettings">
-    <option name="EDITOR_TAB_LIMIT" value="30" />
+    <option name="CONSOLE_COMMAND_HISTORY_LIMIT" value="1000" />
+    <option name="EDITOR_TAB_LIMIT" value="40" />
     <option name="HIDE_KNOWN_EXTENSION_IN_TABS" value="true" />
+    <option name="HIDE_TABS_IF_NEED" value="false" />
     <option name="MAX_LOOKUP_LIST_HEIGHT" value="19" />
     <option name="MAX_LOOKUP_WIDTH2" value="758" />
     <option name="SHOW_PINNED_TABS_IN_A_SEPARATE_ROW" value="true" />
