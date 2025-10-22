@@ -20,10 +20,10 @@
     "name" : "P9 Rock"
   },
   {
-    "id" : "06F23E0E-8257-45D8-92B5-0A86AC24347C",
     "isDefault" : false,
     "name" : "P9 Pop",
     "gains" : {
+      "global" : 0,
       "bands" : [
         2,
         3,
@@ -35,12 +35,16 @@
         2,
         2,
         1
-      ],
-      "global" : 0
-    }
+      ]
+    },
+    "id" : "06F23E0E-8257-45D8-92B5-0A86AC24347C"
   },
   {
+    "id" : "97292CB6-89A2-4F30-AD57-C3552B592EE2",
+    "name" : "My Apple EarPods",
+    "isDefault" : false,
     "gains" : {
+      "global" : 2.3023575543284913,
       "bands" : [
         15.393103448275859,
         9.0999999999999996,
@@ -52,16 +56,14 @@
         5.1299999999999999,
         8.1099999999999994,
         11.42
-      ],
-      "global" : 2.3023575543284913
-    },
-    "name" : "My Apple EarPods",
-    "id" : "97292CB6-89A2-4F30-AD57-C3552B592EE2",
-    "isDefault" : false
+      ]
+    }
   },
   {
-    "id" : "EB806DA4-A46D-4C31-8CA4-22AC4AE349C3",
+    "isDefault" : false,
+    "name" : "Apple EarPods Cri",
     "gains" : {
+      "global" : -0.40000000000000002,
       "bands" : [
         -0.10000000000000001,
         0,
@@ -73,15 +75,14 @@
         -0.10000000000000001,
         0.29999999999999999,
         0.10000000000000001
-      ],
-      "global" : -0.40000000000000002
+      ]
     },
-    "isDefault" : false,
-    "name" : "Apple EarPods Cri"
+    "id" : "EB806DA4-A46D-4C31-8CA4-22AC4AE349C3"
   },
   {
     "isDefault" : false,
     "gains" : {
+      "global" : -14.300000000000001,
       "bands" : [
         12,
         10.300000000000001,
@@ -93,17 +94,16 @@
         2.7000000000000002,
         -1,
         9.0999999999999996
-      ],
-      "global" : -14.300000000000001
+      ]
     },
-    "name" : "Apple EarPods",
-    "id" : "79D834CC-180E-4956-A7B5-0B0AE5337AF1"
+    "id" : "79D834CC-180E-4956-A7B5-0B0AE5337AF1",
+    "name" : "Apple EarPods"
   },
   {
-    "isDefault" : false,
-    "name" : "P9",
     "id" : "D8A3234A-F939-4736-966B-3F8D2B143C29",
+    "name" : "P9",
     "gains" : {
+      "global" : -4.4689655172413794,
       "bands" : [
         3.4758620689655189,
         1.8206896551724121,
@@ -115,8 +115,48 @@
         4.137931034482758,
         4.4689655172413794,
         2.4827586206896548
-      ],
-      "global" : -4.4689655172413794
+      ]
+    },
+    "isDefault" : false
+  },
+  {
+    "isDefault" : false,
+    "gains" : {
+      "global" : -1,
+      "bands" : [
+        0,
+        1,
+        1,
+        -1,
+        1,
+        2,
+        1,
+        0,
+        -1,
+        1
+      ]
+    },
+    "id" : "00A28503-87FD-448E-921E-C4DF8688AE41",
+    "name" : "FN-BA10 Pop"
+  },
+  {
+    "id" : "03FD07AE-3FB1-4BA3-B93B-293A0C596D1A",
+    "name" : "FN-BA10 Rock",
+    "isDefault" : false,
+    "gains" : {
+      "global" : 1,
+      "bands" : [
+        1,
+        2,
+        1,
+        -1,
+        0,
+        -1,
+        1,
+        1,
+        -1,
+        1
+      ]
     }
   }
 ]
