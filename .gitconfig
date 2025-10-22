@@ -21,6 +21,7 @@
 	# editor = subl -n -w
 	# editor = code --wait
 	pager = diff-so-fancy | less --tabs=4 -RFX
+	excludesfile = ~/.gitignore
 [color]
 	ui = true
 [color "diff"]
