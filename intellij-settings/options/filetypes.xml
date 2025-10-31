@@ -3,7 +3,10 @@
     <extensionMap>
       <mapping ext="javaks" type="PLAIN_TEXT" />
       <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
+      <removed_mapping ext="properties" approved="true" type="Properties" />
       <removed_mapping ext="psd" approved="true" type="Image" />
+      <removed_mapping pattern=".devcontainer.json" approved="true" type="JSON5" />
+      <removed_mapping pattern="devcontainer.json" approved="true" type="JSON5" />
     </extensionMap>
   </component>
 </application>

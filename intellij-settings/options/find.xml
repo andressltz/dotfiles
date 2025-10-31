@@ -3,20 +3,22 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <mask>*.css</mask>
     <mask>*.html</mask>
-    <mask>*.jsp</mask>
     <mask>*.vm</mask>
     <mask>*Action*.java</mask>
     <mask>*Populator.java</mask>
-    <mask>*.yml</mask>
-    <mask>*.impex`</mask>
-    <mask>*.properties</mask>
     <mask>*.impex</mask>
-    <mask>*.sql</mask>
-    <mask>*Test.java</mask>
+    <mask>*.properties</mask>
+    <mask>*.js</mask>
+    <mask>*.css</mask>
+    <mask>*.jsp</mask>
+    <mask>*.yml</mask>
+    <mask>*Controller.java</mask>
+    <mask>*Filter*.java</mask>
     <mask>*.xml</mask>
     <mask>*.java</mask>
-    <mask>*Controller.java</mask>
+    <mask>*Test.java</mask>
+    <mask>*Repository.java</mask>
+    <mask>*.sql</mask>
   </component>
 </application>

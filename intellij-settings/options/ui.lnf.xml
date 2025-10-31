@@ -6,6 +6,8 @@
     <option name="HIDE_TABS_IF_NEED" value="false" />
     <option name="MAX_LOOKUP_LIST_HEIGHT" value="19" />
     <option name="MAX_LOOKUP_WIDTH2" value="758" />
+    <option name="NAVIGATION_BAR_LOCATION" value="TOP" />
     <option name="SHOW_PINNED_TABS_IN_A_SEPARATE_ROW" value="true" />
+    <option name="UI_DENSITY" value="COMPACT" />
   </component>
 </application>
