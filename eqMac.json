@@ -1,8 +1,9 @@
 [
   {
     "isDefault" : false,
+    "name" : "My Apple EarPods",
+    "id" : "AFEB728A-A8F6-4405-A7E0-DFC86C8FDF48",
     "gains" : {
-      "global" : 2.3023575543284913,
       "bands" : [
         15.393103448275859,
         9.0999999999999996,
@@ -14,15 +15,14 @@
         5.1299999999999999,
         8.1099999999999994,
         11.42
-      ]
-    },
-    "name" : "My Apple EarPods",
-    "id" : "AFEB728A-A8F6-4405-A7E0-DFC86C8FDF48"
+      ],
+      "global" : 2.3023575543284913
+    }
   },
   {
-    "name" : "Apple EarPods",
+    "id" : "6CBEC719-B90E-4A12-90FE-8048C6921A5A",
+    "isDefault" : false,
     "gains" : {
-      "global" : -14.300000000000001,
       "bands" : [
         12,
         10.300000000000001,
@@ -34,16 +34,14 @@
         2.7000000000000002,
         -1,
         9.0999999999999996
-      ]
+      ],
+      "global" : -14.300000000000001
     },
-    "id" : "6CBEC719-B90E-4A12-90FE-8048C6921A5A",
-    "isDefault" : false
+    "name" : "Apple EarPods"
   },
   {
-    "id" : "FF7A97F6-22A8-4F10-87FC-26445D5331DC",
     "name" : "Chilli Beans",
     "gains" : {
-      "global" : 0,
       "bands" : [
         1,
         2,
@@ -55,15 +53,15 @@
         1,
         -1,
         1
-      ]
+      ],
+      "global" : 0
     },
+    "id" : "FF7A97F6-22A8-4F10-87FC-26445D5331DC",
     "isDefault" : false
   },
   {
     "isDefault" : false,
-    "id" : "93980A9B-2AC8-4102-A018-900583B69016",
     "gains" : {
-      "global" : 1,
       "bands" : [
         1,
         2,
@@ -75,8 +73,30 @@
         1,
         -1,
         1
-      ]
+      ],
+      "global" : 1
     },
+    "id" : "93980A9B-2AC8-4102-A018-900583B69016",
     "name" : "FN-BA10"
+  },
+  {
+    "isDefault" : false,
+    "id" : "5F7135F4-5DCF-4D69-A61F-A77D013E7F59",
+    "gains" : {
+      "bands" : [
+        1,
+        2,
+        0,
+        -1,
+        1,
+        2,
+        3,
+        1,
+        0,
+        1
+      ],
+      "global" : 0
+    },
+    "name" : "Edifier W600BT"
   }
 ]
