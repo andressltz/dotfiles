@@ -2,16 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/andres/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
-ZSH_THEME="agnoster"
-#ZSH_THEME="../../dev/term/my-zsh-theme/agnoster"
-#export DEFAULT_USER="$(whoami)"
+ZSH_THEME="agnoster-customized"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -64,7 +61,7 @@ ZSH_THEME="agnoster"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=~/dev/andressltz/dotfiles/zsh/custom
 
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
@@ -72,10 +69,11 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  thefuck
   # zsh-syntax-highlighting (não testado)
   zsh-autosuggestions
+  F-Sy-H
 )
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 source $ZSH/oh-my-zsh.sh
 
@@ -118,10 +116,29 @@ source $ZSH/oh-my-zsh.sh
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
+
+# Installed by brew install --cask zulu@8
+export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+# Installed by brew install --cask sapmachine11-jdk
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
+# Installed by brew install --cask sapmachine17-jdk
+export JAVA_17_HOME=$(/usr/libexec/java_home -v17)
+# Installed by brew install openjdk@21
+export JAVA_21_HOME=$(/usr/libexec/java_home -v21)
+
+alias java8='export JAVA_HOME=$JAVA_8_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
+alias java11='export JAVA_HOME=$JAVA_11_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
+alias java17='export JAVA_HOME=$JAVA_17_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
+alias java21='export JAVA_HOME=$JAVA_21_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -129,38 +146,64 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-# for work
-export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
-export JAVA_17_HOME=$(/usr/libexec/java_home -v17)
+#export PATH=$PATH:/opt/homebrew/bin/virtualenv
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - zsh)"
 
 # Disable homebrew auto-update when install a new formula
 export HOMEBREW_NO_AUTO_UPDATE=1
-export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
+# export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
 
-alias java11='export JAVA_HOME=$JAVA_11_HOME'
-alias java17='export JAVA_HOME=$JAVA_17_HOME'
+# Hybris
 alias antall='java11 && hybrisbin && . ./setantenv.sh && ant all'
 alias fullbuild='java11 && hybrisbin && ./fullbuild.sh'
-alias hybris='java11 && hybrisbin && ./hybrisserver.sh debug'
-alias hybrisbin='hybrisdir && cd bin/platform'
 alias hybrisdir='cd ~/dev/arezzo/hybris2011/hybris/'
+alias hybrisbin='hybrisdir && cd bin/platform'
+alias hybris='java11 && hybrisbin && ./hybrisserver.sh debug'
+
+# Arezzo
 alias buildfront='nvm use 10 && hybrisdir && cd bin/custom/arezzocostorefront/web/webroot/_ui/desktop/front-vendors && yarn build'
 alias buildtheme='nvm use 10 && hybrisdir && cd bin/custom/arezzocostorefront/web/webroot/_ui/desktop/theme-marketplacezz && yarn build'
-alias wakeup='caffeinate -d'
-alias wakeup1='caffeinate -d -t 3600'
-alias wakeup2='caffeinate -d -t 7200'
-alias wakeup3='caffeinate -d -t 10800'
-alias sshconnect='sshpass -p "pss" ssh -oStrictHostKeyChecking=no "usr"@"host" -p "port"'
+
+## Unimed
+alias unimed='cd ~/dev/unimed'
+alias peccommon='java8 && cd ~/dev/unimed/common/common-backend-parent && mvn clean install -DskipTests && cd ~/dev/unimed/common/common-backend-core && mvn clean install -DskipTests && cd ~/dev/unimed/common/common-web-parent && mvn clean install -DskipTests && cd ~/dev/unimed/common/common-web-core && mvn clean install -DskipTests && cd ~/dev/unimed/common/common-web-ui && mvn clean install -DskipTests'
+alias pecback='java8 && cd ~/dev/unimed/pec/pec-wsclient && mvn clean install -DskipTests && cd ~/dev/unimed/pec/pec-backend && mvn clean install -DskipTests && cd ~/dev/unimed/pec/pec-webapp && mvn clean install -DskipTests'
+alias peccibuildlog='java8 && cd ~/dev/unimed/pec && mvn clean verify -f pom.xml -U -Dspring.profiles.active=build -Duser.language=pt -Duser.country=BR -Duser.timezone=America/Bahia -l build_ci.log'
+alias peccibuild='java8 && cd ~/dev/unimed/pec && mvn clean verify -f pom.xml -U -Dspring.profiles.active=build -Duser.language=pt -Duser.country=BR -Duser.timezone=America/Bahia'
+
+# My Alias
+alias home='cd ~'
+alias dev='cd ~/dev'
+alias wakeup='caffeinate -di'
 alias week='date +%V'
 alias localip="ipconfig getifaddr en0"
+alias killtomcat="ps -ef | grep -i tomcat | grep -v grep | awk '{ print "kill -9 " $2}'|zsh"
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+# Show X apps recents in Dock
+alias setRecents="defaults write com.apple.dock show-recent-count -int 6"
+# npm install -g http-server
+alias server="http-server -c-1"
+# Show/hide icons in Desktop. Use to share screen with privacity
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+alias intellij="open -na \"IntelliJ IDEA.app\""
+alias idea="open -na \"IntelliJ IDEA.app\""
 alias zshconfig="mate ~/.zshrc"
+alias clean="git limpa && git branch -vv | grep 'gone]' | awk '{print $1}' | xargs git branch -D"
+alias dns="sh ~/dev/andressltz/dotfiles/scripts/dns-test.sh"
+alias sshconnect='sshpass -p "pss" ssh -oStrictHostKeyChecking=no "usr"@"host" -p "port"'
 # npm install -g http-server
 alias server="http-server -c-1"
 alias killtomcat="ps -ef | grep -i tomcat | grep -v grep | awk '{ print "kill -9 " $2}'|zsh"
-alias intellij="open -na \"IntelliJ IDEA.app\""
 # alias http-server='docker run -p 8000:80 -v $(pwd):/usr/share/nginx/html nginx'
+
+# Default
+
+# Created by `pipx` on 2025-01-23 19:10:47
+#export PATH="$PATH:/Users/andres/.local/bin"
+
+java21
