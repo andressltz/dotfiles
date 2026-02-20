@@ -1,23 +1,35 @@
-echo "🏃‍♂️Testing G1 with Claro:"
-nslookup g1.globo.com 181.213.132.2
+#!/bin/bash
 
-echo "🏃‍♂️Testing Tecnoblog with Claro:"
-nslookup tecnoblog.net 181.213.132.2
+LOG="dns_monitor.log"
+INTERVAL=5
+PING_TIMEOUT=3
 
-echo "🏃‍♂️Testing G1 with Google:"
-nslookup g1.globo.com 8.8.8.8
+while true; do
+  TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
+  
+  echo "🎯 $TIMESTAMP | Testing G1 with Claro:" >> $LOG
+  nslookup g1.globo.com 181.213.132.2 >> $LOG
 
-echo "🏃‍♂️Testing Tecnoblog with Google:"
-nslookup tecnoblog.net 8.8.8.8
+  echo "🎯 $TIMESTAMP | Testing Tecnoblog with Claro:" >> $LOG
+  nslookup tecnoblog.net 181.213.132.2 >> $LOG
 
-echo "🏃‍♂️Testing G1 with CloudFlare:"
-nslookup g1.globo.com 1.1.1.1
+  echo "🎯 $TIMESTAMP | Testing G1 with Google:" >> $LOG
+  nslookup g1.globo.com 8.8.8.8 >> $LOG
 
-echo "🏃‍♂️Testing Tecnoblog with CloudFlare:"
-nslookup tecnoblog.net 1.1.1.1
+  echo "🎯 $TIMESTAMP | Testing Tecnoblog with Google:" >> $LOG
+  nslookup tecnoblog.net 8.8.8.8 >> $LOG
 
-echo "🏃‍♂️Testing G1 with Quad9:"
-nslookup g1.globo.com 9.9.9.9
+  echo "🎯 $TIMESTAMP | Testing G1 with CloudFlare:" >> $LOG
+  nslookup g1.globo.com 1.1.1.1 >> $LOG
 
-echo "🏃‍♂️Testing Tecnoblog with Quad9:"
-nslookup tecnoblog.net 9.9.9.9
+  echo "🎯 $TIMESTAMP | Testing Tecnoblog with CloudFlare:" >> $LOG
+  nslookup tecnoblog.net 1.1.1.1 >> $LOG
+
+  echo "🎯 $TIMESTAMP | Testing G1 with Quad9:" >> $LOG
+  nslookup g1.globo.com 9.9.9.9 >> $LOG
+
+  echo "🎯 $TIMESTAMP | Testing Tecnoblog with Quad9:" >> $LOG
+  nslookup tecnoblog.net 9.9.9.9 >> $LOG
+    
+  sleep $INTERVAL
+done
