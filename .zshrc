@@ -187,6 +187,9 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 alias setRecents="defaults write com.apple.dock show-recent-count -int 6"
 # npm install -g http-server
 alias server="http-server -c-1"
+# alias http-server='docker run -p 8000:80 -v $(pwd):/usr/share/nginx/html nginx'
+alias sshconnect='sshpass -p "pss" ssh -oStrictHostKeyChecking=no "usr"@"host" -p "port"'
+alias killtomcat="ps -ef | grep -i tomcat | grep -v grep | awk '{ print "kill -9 " $2}'|zsh"
 # Show/hide icons in Desktop. Use to share screen with privacity
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
@@ -195,15 +198,9 @@ alias idea="open -na \"IntelliJ IDEA.app\""
 alias zshconfig="mate ~/.zshrc"
 alias clean="git limpa && git branch -vv | grep 'gone]' | awk '{print $1}' | xargs git branch -D"
 alias dns="sh ~/dev/andressltz/dotfiles/scripts/dns-test.sh"
-alias sshconnect='sshpass -p "pss" ssh -oStrictHostKeyChecking=no "usr"@"host" -p "port"'
-# npm install -g http-server
-alias server="http-server -c-1"
-alias killtomcat="ps -ef | grep -i tomcat | grep -v grep | awk '{ print "kill -9 " $2}'|zsh"
-# alias http-server='docker run -p 8000:80 -v $(pwd):/usr/share/nginx/html nginx'
+alias meld='/Applications/Meld.app/Contents/MacOS/Meld'
+alias k="kubectl"
+alias m2="open ~/.m2"
 
 # Default
-
-# Created by `pipx` on 2025-01-23 19:10:47
-#export PATH="$PATH:/Users/andres/.local/bin"
-
 java21
