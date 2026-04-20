@@ -9,6 +9,7 @@ echo "Limpando diretório: $DIR"
 find "$DIR" -type f \( \
     -iname ".DS_Store" -o \
     -iname "Thumbs.db" -o \
+    -iname "photothumb.db" -o \
     -iname "desktop.ini" -o \
     -iname "._*" \
 \) -print -delete
@@ -22,6 +23,15 @@ find "$DIR" -type f ! \( \
     -iname "*.webp" -o \
     -iname "*.bmp" -o \
     -iname "*.tiff" -o \
+    -iname "*.wlmp" -o \
+    -iname "*.mp4" -o \
+    -iname "*.mov" -o \
+    -iname "*.avi" -o \
+    -iname "*.m4a" -o \
+    -iname "*.wmv" -o \
+    -iname "*.pdf" -o \
+    -iname "*.pptx" -o \
+    -iname "*.mpg" -o \
     -iname "*.svg" \
 \) -print -delete
 

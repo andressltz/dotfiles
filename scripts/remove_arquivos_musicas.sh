@@ -11,10 +11,12 @@ find "$DIR" -type f \( \
     -iname "Thumbs.db" -o \
     -iname "desktop.ini" -o \
     -iname "._*" \
-\) -print -delete
+ \) -print -delete
 
 # Remove tudo que NÃO for música ou imagem (considerando que algumas capas de álbuns podem ser imagens)
 find "$DIR" -type f ! \( \
+    -iname "*.cda" -o \
+    -iname "*.wma" -o \
     -iname "*.mp3" -o \
     -iname "*.m4a" -o \
     -iname "*.aac" -o \
@@ -24,10 +26,8 @@ find "$DIR" -type f ! \( \
     -iname "*.opus" -o \
     -iname "*.aiff" -o \
     -iname "*.alac" -o \
-    -iname "*.jpg" -o \
-    -iname "*.png" -o \
     -iname "*.m3u" -o \
-    -iname "*.m3u8"
+    -iname "*.m3u8" \
 \) -print -delete
 
 # Remove diretórios vazios (de dentro pra fora)
