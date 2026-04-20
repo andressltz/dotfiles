@@ -13,16 +13,21 @@ find "$DIR" -type f \( \
     -iname "._*" \
 \) -print -delete
 
-# Remove tudo que NÃO for imagem
+# Remove tudo que NÃO for música ou imagem (considerando que algumas capas de álbuns podem ser imagens)
 find "$DIR" -type f ! \( \
+    -iname "*.mp3" -o \
+    -iname "*.m4a" -o \
+    -iname "*.aac" -o \
+    -iname "*.flac" -o \
+    -iname "*.wav" -o \
+    -iname "*.ogg" -o \
+    -iname "*.opus" -o \
+    -iname "*.aiff" -o \
+    -iname "*.alac" -o \
     -iname "*.jpg" -o \
-    -iname "*.jpeg" -o \
     -iname "*.png" -o \
-    -iname "*.gif" -o \
-    -iname "*.webp" -o \
-    -iname "*.bmp" -o \
-    -iname "*.tiff" -o \
-    -iname "*.svg" \
+    -iname "*.m3u" -o \
+    -iname "*.m3u8"
 \) -print -delete
 
 # Remove diretórios vazios (de dentro pra fora)
