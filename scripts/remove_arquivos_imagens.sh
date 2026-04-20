@@ -5,9 +5,6 @@ DIR="${1:-.}"
 
 echo "Limpando diretório: $DIR"
 
-# Extensões de imagens permitidas
-EXTENSIONS="jpg jpeg png gif webp bmp tiff svg"
-
 # Remove arquivos lixo comuns
 find "$DIR" -type f \( \
     -iname ".DS_Store" -o \
@@ -27,5 +24,8 @@ find "$DIR" -type f ! \( \
     -iname "*.tiff" -o \
     -iname "*.svg" \
 \) -print -delete
+
+# Remove diretórios vazios (de dentro pra fora)
+find "$DIR" -type d -empty -print -delete
 
 echo "Limpeza concluída."
