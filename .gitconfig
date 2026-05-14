@@ -15,6 +15,9 @@
 	rem = !sh -c 'git reset HEAD $1 && git status' -
 	logg = log --graph --date=short --pretty=format:'%Cred%h %Cblue%ad%Creset |%C(yellow)%d%Creset %s %Cblue[%an]'
 	res = reset --hard HEAD
+	cp = !sh -c 'git cherry-pick $1' -
+	web-gitlab = "!open \"$(git remote get-url origin | sed -E 's#ssh://git@([^:/]+)(:[0-9]+)?/#https://\\1/#; s#\\.git$##')\""
+	web-github = "!open \"$(git remote get-url origin | sed -E 's#git@([^:]+):#https://\\1/#; s#ssh://git@([^:/]+)(:[0-9]+)?/#https://\\1/#; s#\\.git$##')\""
 [core]
 	editor = nano
 	# editor = mate -w
