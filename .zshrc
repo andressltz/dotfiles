@@ -201,6 +201,7 @@ alias dns="sh ~/dev/andressltz/dotfiles/scripts/dns-test.sh"
 alias meld='/Applications/Meld.app/Contents/MacOS/Meld'
 alias k="kubectl"
 alias m2="open ~/.m2"
+alias gitls="sh ~/dev/andressltz/dotfiles/scripts/list_git_projects.sh"
 
 # Default
 java21
