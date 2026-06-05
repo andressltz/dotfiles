@@ -35,8 +35,6 @@
 	new = green bold
 	whitespace = red reverse
 	func = 146 bold
-[interactive]
-	diffFilter = diff-so-fancy --patch
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
