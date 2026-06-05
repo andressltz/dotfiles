@@ -1,0 +1,152 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$" value="true" />
+        <entry key="$USER_HOME$/Desktop/Arezzo" value="false" />
+        <entry key="$USER_HOME$/dev/andressltz/gamification-adhd-api" value="true" />
+        <entry key="$USER_HOME$/dev/andressltz/movie-backend-api" value="true" />
+        <entry key="$USER_HOME$/dev/arezzo/azure/ecommerce-documentation/java-utils/read-ceps" value="true" />
+        <entry key="$USER_HOME$/dev/arezzo/ecommerce-api-automation" value="true" />
+        <entry key="$USER_HOME$/dev/arezzo/ecommerce-documentation/java-utils/statement" value="true" />
+        <entry key="$USER_HOME$/dev/arezzo/hybris2011/hybris" value="true" />
+        <entry key="$USER_HOME$/dev/arezzo/ms-alaminuta" value="true" />
+        <entry key="$USER_HOME$/dev/arezzo/ms-ecommerce-integrator" value="true" />
+        <entry key="$USER_HOME$/dev/arezzo/ms-intelipost" value="true" />
+        <entry key="$USER_HOME$/dev/arezzo/ms-shared-customer" value="true" />
+        <entry key="$USER_HOME$/dev/arezzo/ms-shared-exchange-return" value="true" />
+        <entry key="$USER_HOME$/dev/arezzo/ms-treinamento" value="true" />
+        <entry key="$USER_HOME$/dev/arezzo/statement" value="true" />
+        <entry key="$USER_HOME$/dev/cwi/crescidos-k8s/andreswinck/02/crescidos" value="true" />
+        <entry key="$USER_HOME$/dev/cwi/crescidos-k8s/andreswinck/02/crescidos/pom.xml" value="true" />
+        <entry key="$USER_HOME$/dev/cwi/crescidos-k8s/andreswinck/03/crescidos" value="true" />
+        <entry key="$USER_HOME$/dev/cwi/crescidos-k8s/andreswinck/03/crescidos/pom.xml" value="true" />
+        <entry key="$USER_HOME$/dev/cwi/crescidos-k8s/andreswinck/04/crescidos" value="true" />
+        <entry key="$USER_HOME$/dev/cwi/crescidos-k8s/andreswinck/04/crescidos/pom.xml" value="true" />
+        <entry key="$USER_HOME$/dev/cwi/crescidos-k8s/andreswinck/05/crescidos" value="true" />
+        <entry key="$USER_HOME$/dev/cwi/crescidos-k8s/andreswinck/05/crescidos/pom.xml" value="true" />
+        <entry key="$USER_HOME$/dev/cwi/crescidos-k8s/andreswinck/crescidos" value="true" />
+        <entry key="$USER_HOME$/dev/tasks" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/atendimento-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/atendimento-front" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/autorizador-api" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/autorizador-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/autorizador-front" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/bemMais" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/bemMais/bemmais-files" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/bemMais/bemmais-notificacao" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/bemMais/healthy-hub-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/bemMais/healthy-hub-back/pom.xml" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/bemMais/healthy-hub-front" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/bemMais/healthy-hub-permissao" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/bemMais/healthy-hub-permissao/pom.xml" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/bemmais-back-workspace" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/bemmais-back-workspace/bemmais-files" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/bemmais-back-workspace/bemmais-notificacao" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/bemmais-back-workspace/files-unimed" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/bemmais-back-workspace/healthy-hub-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/bemmais-back-workspace/healthy-hub-permissao" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/bemmais-log" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/common" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/common/common-backend-core" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/common/common-backend-parent" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/common/common-web-core" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/common/common-web-parent" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/common/common-web-ui" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/config-ci" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/configuracao-api" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/configuracao-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/configuracao-front" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/consolidacao-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/demonstrativo-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/gate-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/healthy-hub-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/healthy-hub-common" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/healthy-hub-front" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/healthy-hub-permissao" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/healthy-hub-tests" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/historico-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/integracao-laudos-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/intercambio-api" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/intercambio-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/intercambio-front" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/k8s-tunnel-cli" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/octopus" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/octopus-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/octopus-back/pom.xml" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/octopus-common-front" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/octopus-front" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/octopus/octopus-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/octopus/octopus-back/pom.xml" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/octopus/octopus-common-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/octopus/permissao-api" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/octopus/permissao-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/pec" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/pec/pec-backend" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/pec/pec-webapp" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/pec/pec-wsclient" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/permissao-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/permissao-front" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/prescricao-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/atendimento-api" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/atendimento-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/autorizador-api" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/autorizador-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/comunicacao-tiss-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/configuracao-api" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/configuracao-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/consolidacao-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/consolidacao-back/pom.xml" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/demonstrativo-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/demonstrativo-back/pom.xml" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/drools-api" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/drools-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/faq-api" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/faq-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/file-storage-api" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/file-storage-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/historico-api" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/historico-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/integracao-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/integracao-laudos-api" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/integracao-laudos-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/intercambio-api" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/intercambio-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/notificacao-api" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/notificacao-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/permissao-api" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/permissao-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/prescricao-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/prescricao-back/pom.xml" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/unimedvtrp-common-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/unimedvtrp-redis" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/unimedvtrp-rmi" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/unimedvtrp-sms" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/unimedvtrp-sms/pom.xml" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/siga/unimedvtrp-spring" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/unimedvtrp-common-back" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/unimedvtrp-config" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/unimedvtrp-docs" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/unimedvtrp-log" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/unimedvtrp-mail" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/unimedvtrp-redis" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/unimedvtrp-report" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/unimedvtrp-rmi" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/unimedvtrp-scheduler" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/unimedvtrp-sms" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/unimedvtrp-spring" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/workspace" value="true" />
+        <entry key="$USER_HOME$/dev/unimed/wsclient" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="Trusted.Paths.Settings">
+    <option name="TRUSTED_PATHS">
+      <list>
+        <option value="$USER_HOME$/dev/arezzo/hybris2011" />
+        <option value="$USER_HOME$/dev/arezzo" />
+      </list>
+    </option>
+  </component>
+</application>

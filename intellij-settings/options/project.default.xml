@@ -1,20 +1,17 @@
 <application>
   <component name="ProjectManager">
     <defaultProject>
-      <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;
+      <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
       <component name="WindowStateProjectService">
-        <state x="2389" y="182" key="SettingsEditor" timestamp="1754343033531">
-          <screen x="1920" y="0" width="1920" height="1080" />
+        <state x="340" y="150" key="SettingsEditor" timestamp="1779651103780">
+          <screen x="0" y="36" width="1662" height="1044" />
         </state>
-        <state x="2389" y="182" key="SettingsEditor/-1512.640.1512.950/0.25.1920.1023/1920.0.1920.1080" timestamp="1754343033531" />
-        <state x="355" y="114" width="800" height="674" key="new project wizard" timestamp="1756647522052">
-          <screen x="0" y="38" width="1512" height="912" />
-        </state>
-        <state x="355" y="114" width="800" height="674" key="new project wizard/0.38.1512.912/-492.-1415.2560.1415" timestamp="1756647522052" />
+        <state x="340" y="150" key="SettingsEditor/0.36.1662.1044" timestamp="1778256457820" />
+        <state x="340" y="150" key="SettingsEditor/0.36.1662.1044/-683.-1662.3008.1662" timestamp="1779651103780" />
       </component>
       <component name="masterDetails">
         <states>

@@ -8,6 +8,13 @@
         <option value="org.jetbrains.plugins.stylus" />
         <option value="com.intellij.jdbi" />
         <option value="com.intellij.spring.websocket" />
+        <option value="com.intellij.spring" />
+        <option value="com.intellij.drools" />
+        <option value="com.jetbrains.jax.ws" />
+        <option value="com.intellij.reactivestreams" />
+        <option value="com.intellij.drools" />
+        <option value="com.jetbrains.jax.ws" />
+        <option value="com.intellij.reactivestreams" />
       </list>
     </option>
   </component>

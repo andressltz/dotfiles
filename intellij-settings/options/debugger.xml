@@ -93,15 +93,12 @@
       <option name="INCLUDE" value="true" />
     </filter>
   </component>
+  <component name="ThreadsViewSettings">
+    <option name="SHOW_CLASS_NAME" value="false" />
+    <option name="SHOW_SOURCE_NAME" value="true" />
+  </component>
   <component name="XDebuggerSettings">
     <data-views />
     <general />
-    <debuggers>
-      <debugger id="javascript">
-        <configuration>
-          <custom-object-presentation />
-        </configuration>
-      </debugger>
-    </debuggers>
   </component>
 </application>

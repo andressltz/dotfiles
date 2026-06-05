@@ -1,0 +1,11 @@
+<application>
+  <component name="ServerConfiguration">
+    <option name="tomcatInfos">
+      <TomcatInfo>
+        <option name="name" value="Apache Tomcat/7.0.109" />
+        <option name="path" value="$USER_HOME$/dev/tools/apache-tomcat-7.0.109" />
+        <option name="version" value="7.0.109.0" />
+      </TomcatInfo>
+    </option>
+  </component>
+</application>

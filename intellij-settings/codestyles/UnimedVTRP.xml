@@ -1,4 +1,4 @@
-<code_scheme name="code_style" version="200">
+<code_scheme name="UnimedVTRP" version="200">
   <option name="AUTODETECT_INDENTS" value="false" />
   <option name="OTHER_INDENT_OPTIONS">
     <value>
@@ -12,77 +12,44 @@
       <fileSet type="globPattern" pattern="*.md" />
     </list>
   </option>
-  <JSCodeStyleSettings version="0">
-    <option name="OBJECT_LITERAL_WRAP" value="2" />
-  </JSCodeStyleSettings>
   <JavaCodeStyleSettings>
     <option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="99" />
     <option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="99" />
     <option name="IMPORT_LAYOUT_TABLE">
       <value>
-        <package name="" withSubpackages="true" static="false" module="true" />
         <package name="" withSubpackages="true" static="true" />
         <emptyLine />
         <package name="java" withSubpackages="true" static="false" />
-        <emptyLine />
         <package name="javax" withSubpackages="true" static="false" />
         <emptyLine />
-        <package name="javax.servlet" withSubpackages="true" static="false" />
-        <emptyLine />
-        <package name="org.aopalliance" withSubpackages="true" static="false" />
-        <emptyLine />
         <package name="org" withSubpackages="true" static="false" />
+        <package name="com" withSubpackages="true" static="false" />
         <emptyLine />
         <package name="br.com.unimedvtrp" withSubpackages="true" static="false" />
         <emptyLine />
         <package name="io" withSubpackages="true" static="false" />
-        <emptyLine />
         <package name="lombok" withSubpackages="true" static="false" />
         <emptyLine />
         <package name="" withSubpackages="true" static="false" />
       </value>
     </option>
   </JavaCodeStyleSettings>
-  <JetCodeStyleSettings>
-    <option name="CODE_STYLE_DEFAULTS" value="KOTLIN_OFFICIAL" />
-  </JetCodeStyleSettings>
   <MarkdownNavigatorCodeStyleSettings>
     <option name="RIGHT_MARGIN" value="72" />
   </MarkdownNavigatorCodeStyleSettings>
-  <editorconfig>
-    <option name="ENABLED" value="false" />
-  </editorconfig>
-  <codeStyleSettings language="Groovy">
-    <indentOptions>
-      <option name="USE_TAB_CHARACTER" value="true" />
-    </indentOptions>
-  </codeStyleSettings>
-  <codeStyleSettings language="HTML">
-    <indentOptions>
-      <option name="USE_TAB_CHARACTER" value="true" />
-    </indentOptions>
-  </codeStyleSettings>
   <codeStyleSettings language="JAVA">
-    <option name="RIGHT_MARGIN" value="150" />
     <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
     <option name="KEEP_CONTROL_STATEMENT_IN_ONE_LINE" value="false" />
     <option name="BLANK_LINES_AROUND_FIELD_IN_INTERFACE" value="1" />
     <option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
     <option name="SPACE_BEFORE_ARRAY_INITIALIZER_LBRACE" value="true" />
-    <option name="CALL_PARAMETERS_WRAP" value="1" />
-    <option name="METHOD_PARAMETERS_WRAP" value="5" />
-    <option name="METHOD_CALL_CHAIN_WRAP" value="5" />
+    <option name="SPACE_BEFORE_ANNOTATION_ARRAY_INITIALIZER_LBRACE" value="true" />
     <option name="TERNARY_OPERATION_WRAP" value="5" />
     <option name="TERNARY_OPERATION_SIGNS_ON_NEXT_LINE" value="true" />
-    <option name="ARRAY_INITIALIZER_WRAP" value="1" />
-    <option name="ARRAY_INITIALIZER_LBRACE_ON_NEXT_LINE" value="true" />
-    <option name="ARRAY_INITIALIZER_RBRACE_ON_NEXT_LINE" value="true" />
-    <option name="ASSERT_STATEMENT_WRAP" value="2" />
-    <option name="ASSERT_STATEMENT_COLON_ON_NEXT_LINE" value="true" />
     <option name="ENUM_CONSTANTS_WRAP" value="2" />
-    <option name="BUILDER_METHODS" value="filter,map,reduce,flatMap,collect,isPresent,ifPresent,orElse,orElseGet,orElseThrow,mapToInt,mapToLong,mapToDouble,flatMapToInt,flatMapToLong,flatMapToDouble,distinct,sorted,peek,limit,skip,forEachOrdered,forEach,toArray,reduce,min,max,count,anyMatch,allMatch,noneMatch,findAny,findFirst,empty,of,iterate,generate,stream,append,ofNullable,or,toList,toSet" />
     <indentOptions>
       <option name="USE_TAB_CHARACTER" value="true" />
+      <option name="SMART_TABS" value="true" />
     </indentOptions>
     <arrangement>
       <groups>
@@ -417,28 +384,7 @@
       </rules>
     </arrangement>
   </codeStyleSettings>
-  <codeStyleSettings language="JSON">
-    <indentOptions>
-      <option name="INDENT_SIZE" value="4" />
-      <option name="USE_TAB_CHARACTER" value="true" />
-    </indentOptions>
-  </codeStyleSettings>
-  <codeStyleSettings language="JavaScript">
-    <option name="CALL_PARAMETERS_WRAP" value="2" />
-    <option name="PREFER_PARAMETERS_WRAP" value="true" />
-    <option name="CALL_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
-    <option name="CALL_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
-    <indentOptions>
-      <option name="USE_TAB_CHARACTER" value="true" />
-    </indentOptions>
-  </codeStyleSettings>
   <codeStyleSettings language="XML">
-    <indentOptions>
-      <option name="USE_TAB_CHARACTER" value="true" />
-    </indentOptions>
-  </codeStyleSettings>
-  <codeStyleSettings language="kotlin">
-    <option name="CODE_STYLE_DEFAULTS" value="KOTLIN_OFFICIAL" />
     <indentOptions>
       <option name="USE_TAB_CHARACTER" value="true" />
     </indentOptions>

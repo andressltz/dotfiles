@@ -12,6 +12,7 @@
     <option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="25" />
   </JavaCodeStyleSettings>
   <codeStyleSettings language="JAVA">
+    <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
     <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="1" />
     <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
     <option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="1" />

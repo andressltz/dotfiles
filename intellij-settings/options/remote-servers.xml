@@ -1,0 +1,14 @@
+<application>
+  <component name="RemoteServers">
+    <remote-server name="Docker" type="docker">
+      <configuration>
+        <option name="apiUrl" value="unix:///var/run/docker.sock" />
+        <option name="autoDetectExePaths" value="false" />
+        <option name="certificatesPath" />
+        <option name="customConfiguratorId" value="DockerDefaultConnectionConfigurator" />
+        <option name="dockerComposeExePath" value="/opt/homebrew/bin/docker" />
+        <option name="dockerExePath" value="/opt/homebrew/bin/docker" />
+      </configuration>
+    </remote-server>
+  </component>
+</application>
