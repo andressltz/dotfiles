@@ -3,7 +3,7 @@
     <option name="customScope" value="Project Files" />
     <option name="defaultScopeName" value="Project Files" />
     <option name="SEARCH_SCOPE" value="Project Files" />
-    <option name="FILE_MASK" value="!*RepositoryTest.java" />
+    <option name="FILE_MASK" value="*.java" />
     <mask>*.html</mask>
     <mask>*.vm</mask>
     <mask>*Action*.java</mask>
@@ -15,17 +15,17 @@
     <mask>*Filter*.java</mask>
     <mask>*Repository.java</mask>
     <mask>*.yml</mask>
-    <mask>*.json</mask>
-    <mask>*Controlador.java</mask>
     <mask>*.properties</mask>
-    <mask>*.java</mask>
     <mask>*RestController.java</mask>
     <mask>*FeignApi.java</mask>
-    <mask>!*Test.java</mask>
-    <mask>*Test.java</mask>
-    <mask>*.sql</mask>
     <mask>*Controller.java</mask>
     <mask>*.xml</mask>
     <mask>!*RepositoryTest.java</mask>
+    <mask>*Test.java</mask>
+    <mask>*.json</mask>
+    <mask>*Controlador.java</mask>
+    <mask>!*Test.java</mask>
+    <mask>*.sql</mask>
+    <mask>*.java</mask>
   </component>
 </application>

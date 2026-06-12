@@ -1,6 +1,13 @@
 <application>
   <component name="SonarLintGlobalSettings">
     <option name="autoTrigger" value="false" />
+    <option name="fileExclusions">
+      <list>
+        <option value="**/Dockerfile" />
+        <option value="**/*.html" />
+        <option value="**/*.yml" />
+      </list>
+    </option>
     <option name="nodejsPath" value="$USER_HOME$/.nvm/versions/node/v20.18.0/bin/node" />
     <option name="secretsNeverBeenAnalysed" value="false" />
     <option name="sonarQubeServers">
