@@ -17,13 +17,16 @@
 # sudo launchctl remove com.snap.SnapCameraRemover
 # sudo systemextensionsctl list
 # sudo systemextensionsctl uninstall 53AQ936H96 org.pqrs.Karabiner-DriverKit-VirtualHIDDevice
+# launchctl remove net.pornel.ImageOptim
+# launchctl remove com.microsoft.Word
+# launchctl remove group.pro.listy.app
 
 # find / \
 #   \( -path "*com.apple.TimeMachine.localsnapshots*" \
 #      -o -path "/System/Volumes/Preboot*" \
 #      -o -path "/System/Volumes/VM*" \) \
 #   -prune -o \
-#   -iname "*OneDrive*" -print 2>/dev/null
+#   -iname "*group.pro.listy*" -print 2>/dev/null
 
 # Ensure script has root authority
 if ! [ "$(id -u)" = 0 ]; then
@@ -99,6 +102,9 @@ REMOVE_FILES=(
   '/System/Volumes/Data/Users/andres/Library/Application Scripts/UBF8T346G9.OfficeOneDriveSyncIntegration'
   '/System/Volumes/Data/Users/andres/Library/Group Containers/UBF8T346G9.OfficeOneDriveSyncIntegration'
   '/System/Volumes/Data/Users/andres/Library/Group Containers/UBF8T346G9.OfficeOneDriveSyncIntegration/Library/Application Scripts/UBF8T346G9.OfficeOneDriveSyncIntegration'
+  '/System/Volumes/Data/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/0/sysdiagnose.616-3Tirjz/usernoted/apps/com.microsoft.Word.txt'
+  '/System/Volumes/Data/Users/andres/Library/Application Support/Logi/LogiPluginService/Temp/ApplicationIcons/com.microsoft.Word.png'
+  '/System/Volumes/Data/Users/andres/Library/Daemon Containers/C55F6646-10ED-474D-A28E-6E4BDF61007B/Data/SpinTracer/com.microsoft.Word'
   );
 for (( i = 0 ; i < "${#REMOVE_FILES[@]}" ; i++ ))
 do
@@ -133,5 +139,14 @@ find "/var/root/Library/Preferences" -name 'com.snap.*' -type f -delete
 
 find "/Library/Preferences" -name 'org.pqrs.*' -type f -delete
 find "/var/root/Library/Preferences" -name 'org.pqrs.*' -type f -delete
+
+find "/Library/Preferences" -name 'net.pornel.*' -type f -delete
+find "/var/root/Library/Preferences" -name 'net.pornel.*' -type f -delete
+
+find "/Library/Preferences" -name 'group.pro.listy*' -type f -delete
+find "/var/root/Library/Preferences" -name 'group.pro.listy*' -type f -delete
+
+find "/Library/Preferences" -name 'com.microsoft.Word*' -type f -delete
+find "/var/root/Library/Preferences" -name 'com.microsoft.Word*' -type f -delete
 
 exit 0
