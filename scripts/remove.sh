@@ -1,32 +1,65 @@
 #!/bin/bash
-#
-# Part of DssW Power Manager
-# Copyright (c) 2022 Dragon Systems Software Limited
-# Support: support@dssw.co.uk
-#
-# This script removes Power Manager from the target drive. A restart is required.
+
+# This script removes uninstalled applications. A restart is required.
 
 # /Library/LaunchAgents
 # /Library/LaunchDaemons
 # ~/Library/LaunchAgents
-# sudo find / -iname "*com.snap*" 2>/dev/null
-# sudo find / -iname "*snapcamera*" 2>/dev/null
 # launchctl remove com.snap.AssistantService
 # launchctl remove com.snap.SnapCameraRemover
 # sudo launchctl remove com.snap.AssistantService
 # sudo launchctl remove com.snap.SnapCameraRemover
 # sudo systemextensionsctl list
 # sudo systemextensionsctl uninstall 53AQ936H96 org.pqrs.Karabiner-DriverKit-VirtualHIDDevice
-# launchctl remove net.pornel.ImageOptim
+# sudo launchctl remove com.surteesstudios.Bartender
+# sudo launchctl remove com.surteesstudios.Bartender5StartAtLoginHelper
+# sudo launchctl remove com.surteesstudios.HideMenuBarHelper
 # launchctl remove com.microsoft.Word
-# launchctl remove group.pro.listy.app
+# launchctl remove com.ideashower.ReadItLaterPro.AddToPocketExtension
+# launchctl remove com.ideashower.ReadItLaterPro.iMessageExtension
+# launchctl remove com.ideashower.ReadItLaterPro.PushNotificationServiceExtension
+# launchctl remove com.ideashower.ReadItLaterPro.PushNotificationStoryExtension
+# launchctl remove com.ideashower.ReadItLaterPro.Widget-Extension
+# launchctl remove com.ideashower.ReadItLaterPro
 
-# find / \
+# sudo find / \
 #   \( -path "*com.apple.TimeMachine.localsnapshots*" \
+#      -o -path "/System/Volumes/Data/.MobileBackups*" \
+#      -o -path "/Volumes/.timemachine*" \
+#      -o -path "/Volumes/com.apple.TimeMachine*" \
+#      -o -path "/System/Volumes/Update*" \
 #      -o -path "/System/Volumes/Preboot*" \
 #      -o -path "/System/Volumes/VM*" \) \
 #   -prune -o \
-#   -iname "*group.pro.listy*" -print 2>/dev/null
+#   -iname "*uk.co.dssw.powermanager*" -print 2>/dev/null
+
+# sudo find \
+#   /Applications \
+#   /Library \
+#   /Users \
+#   /etc \
+#   /private \
+#   \( -iname "*uk.co.dssw.powermanager*" \
+#     -o -iname "*com.microsoft.OneDrive*" \
+#     -o -iname "*com.ideashower*" \
+#     -o -iname "*com.microsoft.rdc*" \
+#     -o -iname "*com.microsoft.Word*" \
+#     -o -iname "*com.snap*" \
+#     -o -iname "*snapcamera*" \
+#     -o -iname "*org.pqrs*" \
+#     -o -iname "*group.pro.listy*" \
+#     -o -iname "*net.pornel*" \
+#     -o -iname "*com.surteesstudios*" \
+#     -o -iname "*voicemodaudio*" \
+#     -o -iname "*com.adguard*" \
+#     -o -iname "*com.istudiezteam*" \
+#     -o -iname "*bartender*" \) \
+#   -print 2>/dev/null
+
+# /Library/SystemExtensions/FFABED8B-11E4-4030-AB54-014513621EBA/com.adguard.mac.adguard.network-extension.systemextension
+
+# Limpar o cache do Spotlight pode ser necessário para remover os arquivos do índice de pesquisa:
+# sudo mdutil -E /
 
 # Ensure script has root authority
 if ! [ "$(id -u)" = 0 ]; then
@@ -105,6 +138,38 @@ REMOVE_FILES=(
   '/System/Volumes/Data/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/0/sysdiagnose.616-3Tirjz/usernoted/apps/com.microsoft.Word.txt'
   '/System/Volumes/Data/Users/andres/Library/Application Support/Logi/LogiPluginService/Temp/ApplicationIcons/com.microsoft.Word.png'
   '/System/Volumes/Data/Users/andres/Library/Daemon Containers/C55F6646-10ED-474D-A28E-6E4BDF61007B/Data/SpinTracer/com.microsoft.Word'
+  '/Users/andres/Library/Containers/4D6F3808-269A-4162-AFAA-D24D9D8392B5/Data/Library/Application Scripts/com.ideashower.ReadItLaterPro.AddToPocketExtension'
+  '/Users/andres/Library/Containers/0B79329F-3DFE-4D9E-8249-50B2EE87E996/Data/Library/Application Scripts/com.ideashower.ReadItLaterPro.iMessageExtension'
+  '/Users/andres/Library/Containers/799215B0-B6B5-4310-A725-AA43600CDF3B/Data/Library/Application Scripts/com.ideashower.ReadItLaterPro.PushNotificationServiceExtension'
+  '/Users/andres/Library/Containers/BF32C278-7EF4-460E-AA45-7B59EE094995/Data/Library/Application Scripts/com.ideashower.ReadItLaterPro.PushNotificationStoryExtension'
+  '/Users/andres/Library/Containers/FED7DBFF-9C3F-42F4-BBC3-3E804FB95124/Data/Library/Application Scripts/com.ideashower.ReadItLaterPro.Widget-Extension'
+  '/Users/andres/Library/Containers/FED7DBFF-9C3F-42F4-BBC3-3E804FB95124/Data/Library/HTTPStorages/com.ideashower.ReadItLaterPro.Widget-Extension'
+  '/Users/andres/Library/Containers/0FBE1A01-DAAD-4834-9F5E-C800AC4ACD71/Data/Library/Saved Application State/com.ideashower.ReadItLaterPro~iosmac.savedState'
+  '/Users/andres/Library/Containers/0FBE1A01-DAAD-4834-9F5E-C800AC4ACD71/Data/Library/Preferences/com.ideashower.ReadItLaterPro.plist'
+  '/Users/andres/Library/Containers/0FBE1A01-DAAD-4834-9F5E-C800AC4ACD71/Data/Library/Application Scripts/com.ideashower.ReadItLaterPro'
+  '/Users/andres/Library/Containers/0FBE1A01-DAAD-4834-9F5E-C800AC4ACD71/Data/Library/HTTPStorages/com.ideashower.ReadItLaterPro'
+  '/Users/andres/Library/Containers/0FBE1A01-DAAD-4834-9F5E-C800AC4ACD71/Data/Library/Caches/com.ideashower.ReadItLaterPro'
+  '/Library/Audio/Plug-Ins/HAL/VoicemodAudioDevice.driver'
+  '/Library/Audio/Plug-Ins/HAL/VoicemodAudioDevice.driver/Contents/MacOS/VoicemodAudioDevice'
+  '/Library/SystemExtensions/FFABED8B-11E4-4030-AB54-014513621EBA/com.adguard.mac.adguard.network-extension.systemextension'
+  '/Library/SystemExtensions/FFABED8B-11E4-4030-AB54-014513621EBA/com.adguard.mac.adguard.network-extension.systemextension/Contents/MacOS/com.adguard.mac.adguard.network-extension'
+  '/Users/andres/Library/Application Scripts/TC3Q7MAJXF.com.adguard.mac'
+  '/private/var/root/Library/Application Scripts/TC3Q7MAJXF.com.adguard.mac'
+  '/private/var/root/Library/Application Scripts/com.adguard.mac.adguard.network-extension'
+  '/private/var/root/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac'
+  '/private/var/root/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac/Library/Application Support/com.adguard.mac.adguard'
+  '/private/var/root/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac/Library/Application Scripts/TC3Q7MAJXF.com.adguard.mac'
+  '/private/var/root/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac/Library/Logs/com.adguard.mac.adguard'
+  '/private/var/root/Library/Containers/com.adguard.mac.adguard.network-extension'
+  '/private/var/root/Library/Containers/com.adguard.mac.adguard.network-extension/Data/Library/Application Scripts/com.adguard.mac.adguard.network-extension'
+  '/private/var/root/Library/Containers/com.adguard.mac.adguard.network-extension/Data/Library/HTTPStorages/com.adguard.mac.adguard.network-extension'
+  '/private/var/root/Library/Containers/com.adguard.mac.adguard.network-extension/Data/Library/Caches/com.adguard.mac.adguard.network-extension'
+  '/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.adguard.mac.adguard'
+  '/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.adguard.mac.adguard-installer'
+  '/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.adguard.mac.adguard.safari-assistant'
+  '/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.adguard.mac.adguard.safari-assistant/com.adguard.mac.adguard.safari-assistant'
+  '/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.adguard.mac.adguard.loginhelper'
+  '/Users/andres/Library/Application Scripts/YJW8D95H2C.com.istudiezteam'
   );
 for (( i = 0 ; i < "${#REMOVE_FILES[@]}" ; i++ ))
 do
@@ -148,5 +213,11 @@ find "/var/root/Library/Preferences" -name 'group.pro.listy*' -type f -delete
 
 find "/Library/Preferences" -name 'com.microsoft.Word*' -type f -delete
 find "/var/root/Library/Preferences" -name 'com.microsoft.Word*' -type f -delete
+
+find "/Library/Preferences" -name 'VoicemodAudioDevice*' -type f -delete
+find "/var/root/Library/Preferences" -name 'VoicemodAudioDevice*' -type f -delete
+
+find "/Library/Preferences" -name 'com.adguard.mac.adguard*' -type f -delete
+find "/var/root/Library/Preferences" -name 'com.adguard.mac.adguard*' -type f -delete
 
 exit 0
