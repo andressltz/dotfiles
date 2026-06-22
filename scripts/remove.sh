@@ -53,13 +53,11 @@
 #     -o -iname "*voicemodaudio*" \
 #     -o -iname "*com.adguard*" \
 #     -o -iname "*com.istudiezteam*" \
+#     -o -iname "*com.utmapp*" \
 #     -o -iname "*bartender*" \) \
 #   -print 2>/dev/null
 
 # /Library/SystemExtensions/FFABED8B-11E4-4030-AB54-014513621EBA/com.adguard.mac.adguard.network-extension.systemextension
-
-# Limpar o cache do Spotlight pode ser necessário para remover os arquivos do índice de pesquisa:
-# sudo mdutil -E /
 
 # Ensure script has root authority
 if ! [ "$(id -u)" = 0 ]; then
@@ -170,6 +168,8 @@ REMOVE_FILES=(
   '/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.adguard.mac.adguard.safari-assistant/com.adguard.mac.adguard.safari-assistant'
   '/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.adguard.mac.adguard.loginhelper'
   '/Users/andres/Library/Application Scripts/YJW8D95H2C.com.istudiezteam'
+  '/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.utmapp.QEMUHelper'
+  '/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.utmapp.QEMUHelper/com.utmapp.QEMULauncher'
   );
 for (( i = 0 ; i < "${#REMOVE_FILES[@]}" ; i++ ))
 do
@@ -219,5 +219,8 @@ find "/var/root/Library/Preferences" -name 'VoicemodAudioDevice*' -type f -delet
 
 find "/Library/Preferences" -name 'com.adguard.mac.adguard*' -type f -delete
 find "/var/root/Library/Preferences" -name 'com.adguard.mac.adguard*' -type f -delete
+
+find "/Library/Preferences" -name 'com.utmapp.QEMULauncher*' -type f -delete
+find "/var/root/Library/Preferences" -name 'com.utmapp.QEMULauncher*' -type f -delete
 
 exit 0
