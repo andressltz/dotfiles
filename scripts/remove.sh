@@ -33,6 +33,12 @@
 #   -prune -o \
 #   -iname "*uk.co.dssw.powermanager*" -print 2>/dev/null
 
+# Reactotron
+# MusicBrainz Picard
+# uTorrent Web
+# Send to Kindle
+# USB File Manager
+
 # sudo find \
 #   /Applications \
 #   /Library \
@@ -40,7 +46,6 @@
 #   /etc \
 #   /private \
 #   \( -iname "*uk.co.dssw.powermanager*" \
-#     -o -iname "*com.microsoft.OneDrive*" \
 #     -o -iname "*com.ideashower*" \
 #     -o -iname "*com.microsoft.rdc*" \
 #     -o -iname "*com.microsoft.Word*" \
@@ -54,10 +59,9 @@
 #     -o -iname "*com.adguard*" \
 #     -o -iname "*com.istudiezteam*" \
 #     -o -iname "*com.utmapp*" \
+#     -o -iname "*EndNote *" \
 #     -o -iname "*bartender*" \) \
 #   -print 2>/dev/null
-
-# /Library/SystemExtensions/FFABED8B-11E4-4030-AB54-014513621EBA/com.adguard.mac.adguard.network-extension.systemextension
 
 # Ensure script has root authority
 if ! [ "$(id -u)" = 0 ]; then
@@ -119,20 +123,6 @@ REMOVE_FILES=(
   '/System/Volumes/Data/Users/andres/Library/Daemon Containers/64B2A130-01F5-4F36-9295-C235C808254D/Data/ActionTranscript/com.surteesstudios.Bartender'
   '/System/Volumes/Data/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/developer.apple.wwdc-Release'
   '/System/Volumes/Data/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/developer.apple.wwdc-Release/developer.apple.wwdc-Release'
-  '/System/Volumes/Data/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/0/sysdiagnose.616-3Tirjz/usernoted/apps/com.microsoft.OneDrive-mac.txt'
-  '/System/Volumes/Data/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.microsoft.OneDrive-mac'
-  '/System/Volumes/Data/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.microsoft.OneDrive-mac/com.microsoft.OneDrive-mac'
-  '/System/Volumes/Data/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.microsoft.OneDrive-mac.FileProvider'
-  '/System/Volumes/Data/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.microsoft.OneDrive-mac.FinderSync'
-  '/System/Volumes/Data/Users/andres/Library/Application Support/FileProvider/com.microsoft.OneDrive-mac.FileProvider'
-  '/System/Volumes/Data/Users/andres/Library/Application Support/FileProvider/com.microsoft.OneDrive-mac.FileProvider/OneDrive - UNIÃO DOS ESCOTEIROS DO BRASIL'
-  '/System/Volumes/Data/Users/andres/Library/Preferences/com.apple.FileProvider/com.microsoft.OneDrive-mac.FileProvider'
-  '/System/Volumes/Data/Users/andres/Library/Preferences/com.apple.FileProvider/com.microsoft.OneDrive-mac.FileProvider/OneDrive - UNIÃO DOS ESCOTEIROS DO BRASIL.plist'
-  '/System/Volumes/Data/Users/andres/Library/Preferences/com.apple.FileProvider/com.microsoft.OneDrive-mac.FileProvider/OneDrive.plist'
-  '/System/Volumes/Data/Users/andres/Library/Application Scripts/UBF8T346G9.OneDriveSyncClientSuite'
-  '/System/Volumes/Data/Users/andres/Library/Application Scripts/UBF8T346G9.OfficeOneDriveSyncIntegration'
-  '/System/Volumes/Data/Users/andres/Library/Group Containers/UBF8T346G9.OfficeOneDriveSyncIntegration'
-  '/System/Volumes/Data/Users/andres/Library/Group Containers/UBF8T346G9.OfficeOneDriveSyncIntegration/Library/Application Scripts/UBF8T346G9.OfficeOneDriveSyncIntegration'
   '/System/Volumes/Data/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/0/sysdiagnose.616-3Tirjz/usernoted/apps/com.microsoft.Word.txt'
   '/System/Volumes/Data/Users/andres/Library/Application Support/Logi/LogiPluginService/Temp/ApplicationIcons/com.microsoft.Word.png'
   '/System/Volumes/Data/Users/andres/Library/Daemon Containers/C55F6646-10ED-474D-A28E-6E4BDF61007B/Data/SpinTracer/com.microsoft.Word'
@@ -170,6 +160,9 @@ REMOVE_FILES=(
   '/Users/andres/Library/Application Scripts/YJW8D95H2C.com.istudiezteam'
   '/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.utmapp.QEMUHelper'
   '/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.utmapp.QEMUHelper/com.utmapp.QEMULauncher'
+  '/Applications/EndNote Cite While You Write'
+  '/Library/Application Support/Microsoft/Office365/User Content.localized/Startup.localized/Word/EndNote CWYW Word 16.bundle'
+  '/Users/andres/Library/Logs/EndNote Cite While You Write Installer.log'
   );
 for (( i = 0 ; i < "${#REMOVE_FILES[@]}" ; i++ ))
 do
@@ -189,9 +182,6 @@ find "/var/root/Library/Preferences" -name 'uk.co.dssw.powermanager.*' -type f -
 
 find "/Library/Preferences" -name 'com.ideashower.*' -type f -delete
 find "/var/root/Library/Preferences" -name 'com.ideashower.*' -type f -delete
-
-find "/Library/Preferences" -name 'com.microsoft.OneDrive*' -type f -delete
-find "/var/root/Library/Preferences" -name 'com.microsoft.OneDrive*' -type f -delete
 
 find "/Library/Preferences" -name 'com.microsoft.rdc.*' -type f -delete
 find "/var/root/Library/Preferences" -name 'com.microsoft.rdc.*' -type f -delete
@@ -223,4 +213,21 @@ find "/var/root/Library/Preferences" -name 'com.adguard.mac.adguard*' -type f -d
 find "/Library/Preferences" -name 'com.utmapp.QEMULauncher*' -type f -delete
 find "/var/root/Library/Preferences" -name 'com.utmapp.QEMULauncher*' -type f -delete
 
+find "/Library/Preferences" -name 'EndNote*' -type f -delete
+find "/var/root/Library/Preferences" -name 'EndNote*' -type f -delete
+
 exit 0
+
+# /Applications/EndNote Cite While You Write/Cite While You Write/EndNote CWYW Word 16.bundle
+# /Applications/EndNote Cite While You Write/Cite While You Write/EndNote CWYW Word 16.bundle/Contents/MacOS/EndNote CWYW Word 16
+# /Applications/EndNote Cite While You Write/Cite While You Write/EndNote CWYW Word 16.bundle/Contents/Resources/EndNote.icns
+# /Applications/EndNote Cite While You Write/Cite While You Write/EndNote CWYW Word 16.bundle/Contents/Resources/English.lproj/EndNotePreferencesDialog.nib
+# /Applications/EndNote Cite While You Write/Cite While You Write/EndNote CWYW Word 16.bundle/Contents/Resources/English.lproj/EndNoteWebPreferencesDialog.nib
+# /Applications/EndNote Cite While You Write/Cite While You Write/EndNote CWYW Word 16.bundle/Contents/Resources/EndNote CWYW Word 16.dotm
+
+
+# /Library/Application Support/Microsoft/Office365/User Content.localized/Startup.localized/Word/EndNote CWYW Word 16.bundle/Contents/MacOS/EndNote CWYW Word 16
+# /Library/Application Support/Microsoft/Office365/User Content.localized/Startup.localized/Word/EndNote CWYW Word 16.bundle/Contents/Resources/EndNote.icns
+# /Library/Application Support/Microsoft/Office365/User Content.localized/Startup.localized/Word/EndNote CWYW Word 16.bundle/Contents/Resources/English.lproj/EndNotePreferencesDialog.nib
+# /Library/Application Support/Microsoft/Office365/User Content.localized/Startup.localized/Word/EndNote CWYW Word 16.bundle/Contents/Resources/English.lproj/EndNoteWebPreferencesDialog.nib
+# /Library/Application Support/Microsoft/Office365/User Content.localized/Startup.localized/Word/EndNote CWYW Word 16.bundle/Contents/Resources/EndNote CWYW Word 16.dotm

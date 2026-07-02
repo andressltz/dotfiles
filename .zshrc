@@ -202,6 +202,7 @@ alias meld='/Applications/Meld.app/Contents/MacOS/Meld'
 alias k="kubectl"
 alias m2="open ~/.m2"
 alias gitls="sh ~/dev/andressltz/dotfiles/scripts/list_git_projects.sh"
+alias gitbrd="sh ~/dev/andressltz/dotfiles/scripts/remove_deleted_branches.sh"
 
 # Default
 java21
