@@ -23,6 +23,7 @@ sudo find \
     /private \
     /opt \
     /usr/local \
+    /var/root/Library/Preferences \
     \( "${ARGS[@]}" \) \
     -print 2>/dev/null > "$OUTPUT"
 
