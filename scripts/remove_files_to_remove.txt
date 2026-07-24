@@ -16,9 +16,6 @@
 /System/Volumes/Data/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.microsoft.rdc.macos
 /System/Volumes/Data/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.microsoft.rdc.macos/com.microsoft.rdc.macos
 /System/Volumes/Data/Users/andres/Library/Application Scripts/UBF8T346G9.com.microsoft.rdc
-/System/Volumes/Data/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.microsoft.rdc.macos
-/System/Volumes/Data/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.microsoft.rdc.macos/com.microsoft.rdc.macos
-/System/Volumes/Data/Users/andres/Library/Application Scripts/UBF8T346G9.com.microsoft.rdc
 /System/Volumes/Data/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.surteesstudios.Bartender
 /System/Volumes/Data/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.surteesstudios.Bartender5StartAtLoginHelper
 /System/Volumes/Data/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.surteesstudios.HideMenuBarHelper
@@ -387,16 +384,6 @@
 /Users/andres/Library/Group Containers/group.com.apple.chronod/chronod/remoteArchives/21F23A96-A0D4-41F2-A179-8BA0D9BE614A/com.duolingo.DuolingoMobile.Widget/com.apple.chrono/placeholders/com.duolingo.DuolingoMobile.StreakWidget
 /Users/andres/Library/Group Containers/group.com.apple.chronod/chronod/remoteArchives/21F23A96-A0D4-41F2-A179-8BA0D9BE614A/com.duolingo.DuolingoMobile.Widget/com.apple.chrono/placeholders/com.duolingo.DuolingoMobile.MediumHomeWidget
 /Users/andres/Library/Group Containers/group.com.apple.chronod/chronod/remoteArchives/21F23A96-A0D4-41F2-A179-8BA0D9BE614A/io.robbie.HomeAssistant.Widgets
-/Users/andres/Library/Containers/FDA6B854-3AEC-4071-9C3D-62C0B692B2E8/Data/Library/Application Scripts/com.crossforward.WidgetSmith.SharePhoto
-/Users/andres/Library/Containers/A03A0152-764F-4DB4-BC31-85CA316BD909/Data/Library/Application Scripts/com.darksquaregames.focustask
-/Users/andres/Library/Containers/185857B3-969D-4295-84B2-80C902A9377B/Data/Library/Application Scripts/nl.trevisa.diego.PacoteVicio.Widget
-/Users/andres/Library/Containers/FE7CD5B6-D9CB-45FF-A81F-0EE57F98CA2C/Data/Library/Application Scripts/com.duolingo.DuolingoMobile
-/Users/andres/Library/Containers/0EC19835-DC73-4C15-B23C-39A487A1BADB/Data/Library/Application Scripts/net.mynoise.player.MyNoise.FavouritesWidget
-/Users/andres/Library/Containers/04E7A8E5-5256-45C8-A46E-34225DAA9B8A/Data/Library/Application Scripts/nl.trevisa.diego.PacoteVicio.Intents
-/Users/andres/Library/Containers/43CCAEFD-AF48-4258-A002-37076D7A7F0C/Data/Library/Application Scripts/one4studio.wallpaper.one4wall.OneSignalNotificationServiceExtension
-/Users/andres/Library/Containers/8967BCE9-DB2B-4FF4-9CD4-FE66D6A3969C/Data/Library/Application Scripts/com.crossforward.WidgetSmith.Widgets
-/Users/andres/Library/Containers/7394D00A-AA05-485D-9493-2F3492B55E5E/Data/Library/Application Scripts/com.duolingo.DuolingoMobile.iMessage
-/Users/andres/Library/Containers/4E82E5BD-C023-46EF-9302-95EBF9843BF7/Data/Library/Application Scripts/com.duolingo.DuolingoMobile.Widget
 /Users/andres/Library/Application Support/CloudDocs/session/containers/iCloud.com.getdropbox.Dropbox.plist
 /Users/andres/Library/Application Support/CloudDocs/session/containers/iCloud.com.getdropbox.Dropbox
 /Users/andres/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.readitlater.pocketmac.sfl2
@@ -409,17 +396,11 @@
 /Users/andres/Library/Group Containers/group.com.psicomanager.pacientes.onesignal
 /Users/andres/Library/Group Containers/group.com.psicomanager.pacientes.onesignal/Library/Preferences/group.com.psicomanager.pacientes.onesignal.plist
 /Users/andres/Library/Group Containers/group.com.psicomanager.pacientes.onesignal/Library/Application Scripts/group.com.psicomanager.pacientes.onesignal
-/Users/andres/Library/Containers/FDA6B854-3AEC-4071-9C3D-62C0B692B2E8/Data/Library/Application Scripts/com.crossforward.WidgetSmith.SharePhoto
 /Users/andres/Library/Containers/E4A4B09C-D628-4CDE-9923-CCB6ED8D1878/Data/Library/Application Scripts/com.getsomeheadspace.headspace.stickerextension
 /Users/andres/Library/Containers/157C34F0-6842-4811-903A-77F40AF5DC6F/Data/Library/Saved Application State/tech.median.FocusTaskMobile~iosmac.savedState
 /Users/andres/Library/Containers/157C34F0-6842-4811-903A-77F40AF5DC6F/Data/Library/Preferences/tech.median.FocusTaskMobile.plist
 /Users/andres/Library/Containers/157C34F0-6842-4811-903A-77F40AF5DC6F/Data/Library/Application Scripts/tech.median.FocusTaskMobile
 /Users/andres/Library/Containers/157C34F0-6842-4811-903A-77F40AF5DC6F/Data/Library/HTTPStorages/tech.median.FocusTaskMobile
-/Users/andres/Library/Containers/A03A0152-764F-4DB4-BC31-85CA316BD909/Data/Library/Application Scripts/com.darksquaregames.focustask
-/Users/andres/Library/Containers/185857B3-969D-4295-84B2-80C902A9377B/Data/Library/Application Scripts/nl.trevisa.diego.PacoteVicio.Widget
-/Users/andres/Library/Containers/FE7CD5B6-D9CB-45FF-A81F-0EE57F98CA2C/Data/Library/Application Scripts/com.duolingo.DuolingoMobile
-/Users/andres/Library/Containers/0EC19835-DC73-4C15-B23C-39A487A1BADB/Data/Library/Application Scripts/net.mynoise.player.MyNoise.FavouritesWidget
-/Users/andres/Library/Containers/04E7A8E5-5256-45C8-A46E-34225DAA9B8A/Data/Library/Application Scripts/nl.trevisa.diego.PacoteVicio.Intents
 /Users/andres/Library/Containers/68F6D9A8-54B1-43E4-9F88-776C0564D4F3/Data/Library/Application Scripts/com.psicomanager.pacientes.OneSignalNotificationServiceExtension
 /Users/andres/Library/Containers/2AD7F29A-84EE-41E3-AA9D-0DDD6C1B5E7F/Data/Library/Saved Application State/com.getsomeheadspace.headspace~iosmac.savedState
 /Users/andres/Library/Containers/2AD7F29A-84EE-41E3-AA9D-0DDD6C1B5E7F/Data/Library/Preferences/com.getsomeheadspace.headspace.plist
@@ -427,26 +408,9 @@
 /Users/andres/Library/Containers/2AD7F29A-84EE-41E3-AA9D-0DDD6C1B5E7F/Data/Library/Application Scripts/com.getsomeheadspace.headspace
 /Users/andres/Library/Containers/2AD7F29A-84EE-41E3-AA9D-0DDD6C1B5E7F/Data/Library/HTTPStorages/com.getsomeheadspace.headspace
 /Users/andres/Library/Containers/2AD7F29A-84EE-41E3-AA9D-0DDD6C1B5E7F/Data/Library/Caches/com.getsomeheadspace.headspace
-/Users/andres/Library/Containers/43CCAEFD-AF48-4258-A002-37076D7A7F0C/Data/Library/Application Scripts/one4studio.wallpaper.one4wall.OneSignalNotificationServiceExtension
-/Users/andres/Library/Containers/8967BCE9-DB2B-4FF4-9CD4-FE66D6A3969C/Data/Library/Application Scripts/com.crossforward.WidgetSmith.Widgets
 /Users/andres/Library/Containers/AE29939A-4206-4041-BF3B-C9A926672EAE/Data/Library/Application Scripts/com.getsomeheadspace.headspace.intentsextension
-/Users/andres/Library/Containers/7394D00A-AA05-485D-9493-2F3492B55E5E/Data/Library/Application Scripts/com.duolingo.DuolingoMobile.iMessage
-/Users/andres/Library/Containers/4E82E5BD-C023-46EF-9302-95EBF9843BF7/Data/Library/Application Scripts/com.duolingo.DuolingoMobile.Widget
-/Users/andres/Library/Containers/E91EDACE-AF48-4D95-85C2-6877ED1731B4/Data/Library/Application Scripts/one4studio.wallpaper.one4wall
-/Users/andres/Library/Containers/7846D91D-2CEE-4437-8DF0-FE734BFCFA42/Data/Library/Application Scripts/net.mynoise.player.MyNoise
 /Users/andres/Library/Containers/6C0302EC-2C35-4A03-A316-6FAA8441A2A6/Data/Library/Application Scripts/com.getsomeheadspace.headspace.notificationservice
-/Users/andres/Library/Containers/C6E3EA99-D8A4-4A7F-992F-75B261C056A4/Data/Library/Application Scripts/com.duolingo.DuolingoMobile.NotiServ
 /Users/andres/Library/Containers/FCC0A58C-282B-4ED0-B7D2-841F842EADA1/Data/Library/Application Scripts/com.getsomeheadspace.headspace.Headspace-Widget-Extension
-/Users/andres/Library/Containers/A5270A24-B49D-4D53-BBA4-927FCAF4B1EC/Data/Library/Application Scripts/com.darksquaregames.focustask.Focus-TasK-Widget
-/Users/andres/Library/Containers/BCE7A335-A1A2-475A-9B70-B3369610DDB6/Data/Library/Application Scripts/com.britney.trigger
-/Users/andres/Library/Containers/61ADB209-7AF9-43F1-933F-8A9C846DA0A3/Data/Library/Application Scripts/com.movile.vivomeditacao.mobilepush
-/Users/andres/Library/Containers/8C4C49DF-9EB4-4E55-A279-E013B24BFFA1/Data/Library/Application Scripts/com.crossforward.WidgetSmith.Widget-Config-Intent
-/Users/andres/Library/Containers/2610BBB0-E1F4-4208-A4AA-387BE0BA4EB3/Data/Library/Application Scripts/nl.trevisa.diego.PacoteVicio
-/Users/andres/Library/Containers/D141B279-8AFD-4757-B770-49B9C46E5C24/Data/Library/Application Scripts/com.crossforward.WidgetSmith
-/Users/andres/Library/Containers/654EB599-4D0B-48E5-B3E2-C34319D22A5E/Data/Library/Application Scripts/com.deappsign.timescreen.timescreenwidget
-/Users/andres/Library/Containers/603CC03C-3D68-478D-99EC-160A4F520A6E/Data/Library/Application Scripts/com.movile.vivomeditacao
-/Users/andres/Library/Containers/345E7AAC-94AF-48AB-B848-0E9E085EEA82/Data/Library/Application Scripts/com.deappsign.timescreen
-/Users/andres/Library/Containers/9598E33E-606B-4E65-BDFD-301F5929C420/Data/Library/Application Scripts/com.darksquaregames.focustask.Widget
 /Users/andres/Library/Containers/A4D2CCC5-E739-4915-B57E-AEED25EB3F1E/Data/Library/Saved Application State/br.com.biosom.app~iosmac.savedState
 /Users/andres/Library/Containers/A4D2CCC5-E739-4915-B57E-AEED25EB3F1E/Data/Library/Preferences/br.com.biosom.app.plist
 /Users/andres/Library/Containers/A4D2CCC5-E739-4915-B57E-AEED25EB3F1E/Data/Library/Application Scripts/br.com.biosom.app
@@ -533,34 +497,7 @@
 /Users/andres/Library/Group Containers/group.com.apple.UserNotifications/Library/UserNotifications/Remote/default/SectionSettings/br.com.meliuz.sectionsettings
 /Users/andres/Library/Group Containers/group.com.apple.UserNotifications/Library/UserNotifications/Remote/default/SectionSettings/com.tunein.TuneInRadio.sectionsettings
 /Users/andres/Library/Group Containers/group.com.apple.UserNotifications/Library/UserNotifications/Remote/default/SectionSettings/com.TickTick.task.sectionsettings
-/Users/andres/Library/Containers/FDA6B854-3AEC-4071-9C3D-62C0B692B2E8/Data/Library/Application Scripts/com.crossforward.WidgetSmith.SharePhoto
-/Users/andres/Library/Containers/E4A4B09C-D628-4CDE-9923-CCB6ED8D1878/Data/Library/Application Scripts/com.getsomeheadspace.headspace.stickerextension
-/Users/andres/Library/Containers/157C34F0-6842-4811-903A-77F40AF5DC6F/Data/Library/Application Scripts/tech.median.FocusTaskMobile
-/Users/andres/Library/Containers/A03A0152-764F-4DB4-BC31-85CA316BD909/Data/Library/Application Scripts/com.darksquaregames.focustask
-/Users/andres/Library/Containers/185857B3-969D-4295-84B2-80C902A9377B/Data/Library/Application Scripts/nl.trevisa.diego.PacoteVicio.Widget
-/Users/andres/Library/Containers/0EC19835-DC73-4C15-B23C-39A487A1BADB/Data/Library/Application Scripts/net.mynoise.player.MyNoise.FavouritesWidget
-/Users/andres/Library/Containers/04E7A8E5-5256-45C8-A46E-34225DAA9B8A/Data/Library/Application Scripts/nl.trevisa.diego.PacoteVicio.Intents
-/Users/andres/Library/Containers/68F6D9A8-54B1-43E4-9F88-776C0564D4F3/Data/Library/Application Scripts/com.psicomanager.pacientes.OneSignalNotificationServiceExtension
-/Users/andres/Library/Containers/2AD7F29A-84EE-41E3-AA9D-0DDD6C1B5E7F/Data/Library/Application Scripts/com.getsomeheadspace.headspace
-/Users/andres/Library/Containers/43CCAEFD-AF48-4258-A002-37076D7A7F0C/Data/Library/Application Scripts/one4studio.wallpaper.one4wall.OneSignalNotificationServiceExtension
-/Users/andres/Library/Containers/8967BCE9-DB2B-4FF4-9CD4-FE66D6A3969C/Data/Library/Application Scripts/com.crossforward.WidgetSmith.Widgets
-/Users/andres/Library/Containers/AE29939A-4206-4041-BF3B-C9A926672EAE/Data/Library/Application Scripts/com.getsomeheadspace.headspace.intentsextension
 /Users/andres/Library/Containers/E91EDACE-AF48-4D95-85C2-6877ED1731B4/Data/Library/Application Support/One4WallSwiftUI
-/Users/andres/Library/Containers/E91EDACE-AF48-4D95-85C2-6877ED1731B4/Data/Library/Application Scripts/one4studio.wallpaper.one4wall
-/Users/andres/Library/Containers/7846D91D-2CEE-4437-8DF0-FE734BFCFA42/Data/Library/Application Scripts/net.mynoise.player.MyNoise
-/Users/andres/Library/Containers/6C0302EC-2C35-4A03-A316-6FAA8441A2A6/Data/Library/Application Scripts/com.getsomeheadspace.headspace.notificationservice
-/Users/andres/Library/Containers/FCC0A58C-282B-4ED0-B7D2-841F842EADA1/Data/Library/Application Scripts/com.getsomeheadspace.headspace.Headspace-Widget-Extension
-/Users/andres/Library/Containers/A5270A24-B49D-4D53-BBA4-927FCAF4B1EC/Data/Library/Application Scripts/com.darksquaregames.focustask.Focus-TasK-Widget
-/Users/andres/Library/Containers/BCE7A335-A1A2-475A-9B70-B3369610DDB6/Data/Library/Application Scripts/com.britney.trigger
-/Users/andres/Library/Containers/61ADB209-7AF9-43F1-933F-8A9C846DA0A3/Data/Library/Application Scripts/com.movile.vivomeditacao.mobilepush
-/Users/andres/Library/Containers/8C4C49DF-9EB4-4E55-A279-E013B24BFFA1/Data/Library/Application Scripts/com.crossforward.WidgetSmith.Widget-Config-Intent
-/Users/andres/Library/Containers/2610BBB0-E1F4-4208-A4AA-387BE0BA4EB3/Data/Library/Application Scripts/nl.trevisa.diego.PacoteVicio
-/Users/andres/Library/Containers/D141B279-8AFD-4757-B770-49B9C46E5C24/Data/Library/Application Scripts/com.crossforward.WidgetSmith
-/Users/andres/Library/Containers/654EB599-4D0B-48E5-B3E2-C34319D22A5E/Data/Library/Application Scripts/com.deappsign.timescreen.timescreenwidget
-/Users/andres/Library/Containers/603CC03C-3D68-478D-99EC-160A4F520A6E/Data/Library/Application Scripts/com.movile.vivomeditacao
-/Users/andres/Library/Containers/345E7AAC-94AF-48AB-B848-0E9E085EEA82/Data/Library/Application Scripts/com.deappsign.timescreen
-/Users/andres/Library/Containers/9598E33E-606B-4E65-BDFD-301F5929C420/Data/Library/Application Scripts/com.darksquaregames.focustask.Widget
-/Users/andres/Library/Containers/A4D2CCC5-E739-4915-B57E-AEED25EB3F1E/Data/Library/Application Scripts/br.com.biosom.app
 /Users/andres/Library/Caches/com.plausiblelabs.crashreporter.data/com.dropbox.DropboxMacUpdate
 /private/etc/paths.d/com.vmware.fusion.public
 /private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/0/sysdiagnose.616-3Tirjz/usernoted/apps/com.toggl.daneel.txt
@@ -602,38 +539,11 @@
 /Users/andres/Library/Group Containers/group.com.apple.chronod/chronod/remoteArchives/21F23A96-A0D4-41F2-A179-8BA0D9BE614A/com.fogcreek.trello.createcardwidget
 /Users/andres/Library/Group Containers/group.com.apple.chronod/chronod/remoteArchives/21F23A96-A0D4-41F2-A179-8BA0D9BE614A/com.fogcreek.trello.createcardwidget/com.apple.chrono/placeholders/TrelloWidget
 /Users/andres/Library/Group Containers/group.com.apple.chronod/chronod/remoteArchives/21F23A96-A0D4-41F2-A179-8BA0D9BE614A/com.fogcreek.trello.createcardwidget/com.apple.chrono/placeholders/TrelloInboxWidget
-/Users/andres/Library/Containers/FDA6B854-3AEC-4071-9C3D-62C0B692B2E8/Data/Library/Application Scripts/com.crossforward.WidgetSmith.SharePhoto
-/Users/andres/Library/Containers/E4A4B09C-D628-4CDE-9923-CCB6ED8D1878/Data/Library/Application Scripts/com.getsomeheadspace.headspace.stickerextension
-/Users/andres/Library/Containers/157C34F0-6842-4811-903A-77F40AF5DC6F/Data/Library/Application Scripts/tech.median.FocusTaskMobile
-/Users/andres/Library/Containers/A03A0152-764F-4DB4-BC31-85CA316BD909/Data/Library/Application Scripts/com.darksquaregames.focustask
-/Users/andres/Library/Containers/185857B3-969D-4295-84B2-80C902A9377B/Data/Library/Application Scripts/nl.trevisa.diego.PacoteVicio.Widget
 /Users/andres/Library/Containers/185857B3-969D-4295-84B2-80C902A9377B/Data/SystemData/com.apple.chrono/snapshot/PacoteVicioWidget
 /Users/andres/Library/Containers/185857B3-969D-4295-84B2-80C902A9377B/Data/SystemData/com.apple.chrono/snapshot/PacoteVicioSystemSingleWidget
 /Users/andres/Library/Containers/185857B3-969D-4295-84B2-80C902A9377B/Data/SystemData/com.apple.chrono/placeholders/PacoteVicioWidget
 /Users/andres/Library/Containers/185857B3-969D-4295-84B2-80C902A9377B/Data/SystemData/com.apple.chrono/placeholders/PacoteVicioSystemSingleWidget
-/Users/andres/Library/Containers/0EC19835-DC73-4C15-B23C-39A487A1BADB/Data/Library/Application Scripts/net.mynoise.player.MyNoise.FavouritesWidget
-/Users/andres/Library/Containers/04E7A8E5-5256-45C8-A46E-34225DAA9B8A/Data/Library/Application Scripts/nl.trevisa.diego.PacoteVicio.Intents
-/Users/andres/Library/Containers/68F6D9A8-54B1-43E4-9F88-776C0564D4F3/Data/Library/Application Scripts/com.psicomanager.pacientes.OneSignalNotificationServiceExtension
-/Users/andres/Library/Containers/2AD7F29A-84EE-41E3-AA9D-0DDD6C1B5E7F/Data/Library/Application Scripts/com.getsomeheadspace.headspace
 /Users/andres/Library/Containers/2AD7F29A-84EE-41E3-AA9D-0DDD6C1B5E7F/Data/Library/Caches/SentryCrash/Headspace Mobile
-/Users/andres/Library/Containers/43CCAEFD-AF48-4258-A002-37076D7A7F0C/Data/Library/Application Scripts/one4studio.wallpaper.one4wall.OneSignalNotificationServiceExtension
-/Users/andres/Library/Containers/8967BCE9-DB2B-4FF4-9CD4-FE66D6A3969C/Data/Library/Application Scripts/com.crossforward.WidgetSmith.Widgets
-/Users/andres/Library/Containers/AE29939A-4206-4041-BF3B-C9A926672EAE/Data/Library/Application Scripts/com.getsomeheadspace.headspace.intentsextension
-/Users/andres/Library/Containers/E91EDACE-AF48-4D95-85C2-6877ED1731B4/Data/Library/Application Scripts/one4studio.wallpaper.one4wall
-/Users/andres/Library/Containers/7846D91D-2CEE-4437-8DF0-FE734BFCFA42/Data/Library/Application Scripts/net.mynoise.player.MyNoise
-/Users/andres/Library/Containers/6C0302EC-2C35-4A03-A316-6FAA8441A2A6/Data/Library/Application Scripts/com.getsomeheadspace.headspace.notificationservice
-/Users/andres/Library/Containers/FCC0A58C-282B-4ED0-B7D2-841F842EADA1/Data/Library/Application Scripts/com.getsomeheadspace.headspace.Headspace-Widget-Extension
-/Users/andres/Library/Containers/A5270A24-B49D-4D53-BBA4-927FCAF4B1EC/Data/Library/Application Scripts/com.darksquaregames.focustask.Focus-TasK-Widget
-/Users/andres/Library/Containers/BCE7A335-A1A2-475A-9B70-B3369610DDB6/Data/Library/Application Scripts/com.britney.trigger
-/Users/andres/Library/Containers/61ADB209-7AF9-43F1-933F-8A9C846DA0A3/Data/Library/Application Scripts/com.movile.vivomeditacao.mobilepush
-/Users/andres/Library/Containers/8C4C49DF-9EB4-4E55-A279-E013B24BFFA1/Data/Library/Application Scripts/com.crossforward.WidgetSmith.Widget-Config-Intent
-/Users/andres/Library/Containers/2610BBB0-E1F4-4208-A4AA-387BE0BA4EB3/Data/Library/Application Scripts/nl.trevisa.diego.PacoteVicio
-/Users/andres/Library/Containers/D141B279-8AFD-4757-B770-49B9C46E5C24/Data/Library/Application Scripts/com.crossforward.WidgetSmith
-/Users/andres/Library/Containers/654EB599-4D0B-48E5-B3E2-C34319D22A5E/Data/Library/Application Scripts/com.deappsign.timescreen.timescreenwidget
-/Users/andres/Library/Containers/603CC03C-3D68-478D-99EC-160A4F520A6E/Data/Library/Application Scripts/com.movile.vivomeditacao
-/Users/andres/Library/Containers/345E7AAC-94AF-48AB-B848-0E9E085EEA82/Data/Library/Application Scripts/com.deappsign.timescreen
-/Users/andres/Library/Containers/9598E33E-606B-4E65-BDFD-301F5929C420/Data/Library/Application Scripts/com.darksquaregames.focustask.Widget
-/Users/andres/Library/Containers/A4D2CCC5-E739-4915-B57E-AEED25EB3F1E/Data/Library/Application Scripts/br.com.biosom.app
 /Users/andres/Library/Caches/com.apple.helpd/Generated/VMware Fusion Help*13.6.2
 /Users/andres/Library/Caches/Homebrew/api/cask/wine-stable.json
 /Users/andres/Library/Caches/com.apple.python/Applications/MySQLWorkbench.app
@@ -674,7 +584,6 @@
 /Users/andres/Library/Group Containers/group.mikehill.widgety
 /Users/andres/Library/Group Containers/group.mikehill.widgety/Library/Preferences/group.mikehill.widgety.plist
 /Users/andres/Library/Group Containers/group.mikehill.widgety/Library/Application Scripts/group.mikehill.widgety
-/Users/andres/Library/Containers/43CCAEFD-AF48-4258-A002-37076D7A7F0C/Data/Library/Application Scripts/one4studio.wallpaper.one4wall.OneSignalNotificationServiceExtension
 /Users/andres/Library/Containers/info.chepil.CameraInfo
 /Users/andres/Library/Containers/info.chepil.CameraInfo/Data/Library/Application Support/info.chepil.CameraInfo
 /Users/andres/Library/Containers/info.chepil.CameraInfo/Data/Library/Preferences/info.chepil.CameraInfo.plist
@@ -684,11 +593,8 @@
 /Users/andres/Library/Containers/info.chepil.CameraInfo/Data/Library/Caches/info.chepil.CameraInfo
 /Users/andres/Library/Containers/fi.iki.tml.FluffyDisplay
 /Users/andres/Library/Containers/fi.iki.tml.FluffyDisplay/Data/Library/Application Scripts/fi.iki.tml.FluffyDisplay
-/Users/andres/Library/Containers/E91EDACE-AF48-4D95-85C2-6877ED1731B4/Data/Library/Application Scripts/one4studio.wallpaper.one4wall
 /Users/andres/Library/Application Support/com.bugsnag.Bugsnag/com.villow.wgt.dataProvider
 /Users/andres/Library/Preferences/fr.madrau.switchres.desktop-layout.plist
-/Users/andres/Library/Containers/43CCAEFD-AF48-4258-A002-37076D7A7F0C/Data/Library/Application Scripts/one4studio.wallpaper.one4wall.OneSignalNotificationServiceExtension
-/Users/andres/Library/Containers/E91EDACE-AF48-4D95-85C2-6877ED1731B4/Data/Library/Application Scripts/one4studio.wallpaper.one4wall
 /private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/0/sysdiagnose.616-3Tirjz/usernoted/apps/leits.MeetingBar.txt
 /private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/info.chepil.CameraInfo
 /private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/info.chepil.CameraInfo/info.chepil.CameraInfo
@@ -701,3 +607,5 @@
 /private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/fr.madrau.switchresx.daemon
 /private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/com.villow.wgtSystemApp
 /private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/fr.madrau.switchresx.app
+/Users/andres/Library/Application Support/Logi/LogiPluginService/Temp/ApplicationIcons/com.if.Amphetamine.png
+/Users/andres/Library/Daemon Containers/A29C75CB-C317-4932-A3CA-D3E5F401433D/Data/Library/Caches/Placeholders-v6.noindex/br.com.meliuz-7.210.2
