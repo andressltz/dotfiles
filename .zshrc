@@ -178,7 +178,7 @@ alias home='cd ~'
 alias dev='cd ~/dev'
 alias wakeup='caffeinate -di'
 alias week='date +%V'
-alias localip="ipconfig getifaddr en0"
+alias localip="ipconfig getifaddr en0 && hostname"
 alias killtomcat="ps -ef | grep -i tomcat | grep -v grep | awk '{ print "kill -9 " $2}'|zsh"
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
