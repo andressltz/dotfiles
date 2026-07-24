@@ -1,7 +1,13 @@
+Subversion
+com.intellij.tasks
 org.jetbrains.completion.full.line
-com.github.deeepamin.gitlabciaid
+intellij.jupyter
+hg4idea
+com.intellij.java
+org.jetbrains.debugger.streams
 com.intellij.ml.llm
-com.poratu.idea.plugins.tomcat
-com.github.kisstkondoros.codemetrics
-intellij.vitejs
 org.sonarlint.idea
+com.intellij.notebooks.core
+com.github.kisstkondoros.codemetrics
+JavaScript
+com.poratu.idea.plugins.tomcat
