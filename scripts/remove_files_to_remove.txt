@@ -609,3 +609,9 @@
 /private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/fr.madrau.switchresx.app
 /Users/andres/Library/Application Support/Logi/LogiPluginService/Temp/ApplicationIcons/com.if.Amphetamine.png
 /Users/andres/Library/Daemon Containers/A29C75CB-C317-4932-A3CA-D3E5F401433D/Data/Library/Caches/Placeholders-v6.noindex/br.com.meliuz-7.210.2
+/Users/andres/Library/Application Support/Logi/LogiPluginService/Temp/ApplicationIcons/com.betafish.adblock-mac.png
+/Users/andres/Library/Containers/com.apple.Safari/Data/Library/WebKit/WebExtensions/Default/com.betafish.adblock-mac.SafariContentBlocker (3KKZV48AQD)
+/Users/andres/Library/Containers/com.apple.Safari/Data/Library/WebKit/WebExtensions/295B65C7-8200-42C8-9AF7-4253A5C4C282/com.betafish.adblock-mac.SafariContentBlocker (3KKZV48AQD)
+/Users/andres/Library/Containers/com.apple.Safari/Data/Library/WebKit/ContentExtensions/ContentRuleList-com.betafish.adblock-mac.SafariContentBlocker
+/Users/andres/Library/Containers/com.apple.Safari.WebApp/Data/Library/Containers/com.apple.Safari.WebApp.D66EDF39-FEB4-44A7-A281-A1A06EC70F14/Library/WebApp/AppExtensions/ContentBlockers/ContentRuleList-com.betafish.adblock-mac.SafariContentBlocker
+/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/0/sysdiagnose.616-3Tirjz/usernoted/apps/com.betafish.adblock-mac.txt

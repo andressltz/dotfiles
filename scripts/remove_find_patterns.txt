@@ -100,3 +100,6 @@ MeetingBar
 leits.MeetingBar
 fr.madrau
 switchresx
+com.betafish.adblock-mac
+com.betafish
+adblock-mac
