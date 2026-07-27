@@ -3,7 +3,6 @@ com.drbuho
 com.tinyspeck
 app.mightymac.IntelliDock
 bobko.aerospace
-br.com.meliuz
 ca.justinbush
 cn.better365
 com.alanyan
@@ -69,7 +68,6 @@ io.robbie
 net.rinik
 net.voicemod
 nl.stickybit
-one4wall
 org.virtualbox
 us.zoom
 com.getdropbox
