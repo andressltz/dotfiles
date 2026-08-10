@@ -595,7 +595,6 @@
 /Users/andres/Library/Containers/fi.iki.tml.FluffyDisplay/Data/Library/Application Scripts/fi.iki.tml.FluffyDisplay
 /Users/andres/Library/Application Support/com.bugsnag.Bugsnag/com.villow.wgt.dataProvider
 /Users/andres/Library/Preferences/fr.madrau.switchres.desktop-layout.plist
-/private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/0/sysdiagnose.616-3Tirjz/usernoted/apps/leits.MeetingBar.txt
 /private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/info.chepil.CameraInfo
 /private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/info.chepil.CameraInfo/info.chepil.CameraInfo
 /private/var/folders/wj/b3y8wmt95x57gkd_sbjgmhhc0000gn/C/fi.iki.tml.FluffyDisplay

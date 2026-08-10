@@ -96,8 +96,6 @@ fi.iki.tml
 FluffyDisplay
 com.villow.wgt
 mikehill.widgety
-MeetingBar
-leits.MeetingBar
 fr.madrau
 switchresx
 com.betafish.adblock-mac
