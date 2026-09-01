@@ -193,8 +193,6 @@ alias killtomcat="ps -ef | grep -i tomcat | grep -v grep | awk '{ print "kill -9
 # Show/hide icons in Desktop. Use to share screen with privacity
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-alias intellij="open -na \"IntelliJ IDEA.app\""
-alias idea="open -na \"IntelliJ IDEA.app\""
 alias zshconfig="mate ~/.zshrc"
 alias clean="git limpa && git branch -vv | grep 'gone]' | awk '{print $1}' | xargs git branch -D"
 alias dns="sh ~/dev/andressltz/dotfiles/scripts/dns-test.sh"
