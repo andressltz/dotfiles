@@ -17,7 +17,7 @@ find "$DIR" -type f \( \
 # Remove diretórios node_modules e target
 find "$DIR" -type d \( \
     -name "node_modules" -o \
-    -name "target" \
+    -name "target" -o \
     -name "__MACOSX" \
 \) -prune -print -exec rm -rf {} +
 
