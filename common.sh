@@ -19,13 +19,16 @@ install_oh_my_zsh() {
     echo "==> Installing plugins for Oh My Zsh..."
     
     echo "==> Installing zsh-autosuggestions"
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/dev/andressltz/dotfiles/zsh/custom}/plugins/zsh-autosuggestions
+    # git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/dev/andressltz/dotfiles/zsh/custom}/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
     echo "==> Installing F-Sy-H"
-    git clone https://github.com/z-shell/F-Sy-H.git ${ZSH_CUSTOM:-~/dev/andressltz/dotfiles/zsh/custom}/plugins/F-Sy-H
+    # git clone https://github.com/z-shell/F-Sy-H.git ${ZSH_CUSTOM:-~/dev/andressltz/dotfiles/zsh/custom}/plugins/F-Sy-H
+    git clone https://github.com/z-shell/F-Sy-H.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/F-Sy-H
 
     echo "==> Installing zsh-completions"
-    git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-~/dev/andressltz/dotfiles/zsh/custom}/plugins/zsh-completions
+    # git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-~/dev/andressltz/dotfiles/zsh/custom}/plugins/zsh-completions
+    git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
 }
 
 install_brew_package() {
