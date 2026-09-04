@@ -40,12 +40,16 @@ else
 fi
 
 title "Installing Homebrew"
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-title "Configuring Homebrew on ZSH"
-echo >> ~/.zshrc
-echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"' >> ~/.zshrc
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+if command -v brew >/dev/null 2>&1; then
+    log "Homebrew já está instalado."
+else
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    
+    title "Configuring Homebrew on ZSH"
+    echo >> ~/.zshrc
+    echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"' >> ~/.zshrc
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+fi
 
 ./common.sh "$EMAIL"
 
