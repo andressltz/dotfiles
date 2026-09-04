@@ -1,13 +1,11 @@
-Subversion
-com.intellij.tasks
+Docker
 org.jetbrains.completion.full.line
-intellij.jupyter
-hg4idea
+com.intellij.jsp
 com.intellij.java
 org.jetbrains.debugger.streams
 com.intellij.ml.llm
 org.sonarlint.idea
-com.intellij.notebooks.core
+intellij.prettierJS
 com.github.kisstkondoros.codemetrics
-JavaScript
 com.poratu.idea.plugins.tomcat
+com.intellij.mcpServer

@@ -6,24 +6,4 @@
     <property name="partialSave">true</property>
     <property name="pluginId">com.intellij</property>
   </metaInfo>
-  <attributes>
-    <option name="LINE_FULL_COVERAGE">
-      <value>
-        <option name="BACKGROUND" value="375239" />
-        <option name="FONT_TYPE" value="1" />
-      </value>
-    </option>
-    <option name="LINE_NONE_COVERAGE">
-      <value>
-        <option name="BACKGROUND" value="5e3838" />
-        <option name="FONT_TYPE" value="1" />
-      </value>
-    </option>
-    <option name="LINE_PARTIAL_COVERAGE">
-      <value>
-        <option name="BACKGROUND" value="5e4d33" />
-        <option name="FONT_TYPE" value="1" />
-      </value>
-    </option>
-  </attributes>
 </scheme>

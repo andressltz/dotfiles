@@ -2,6 +2,7 @@
   <component name="AdvancedSettings">
     <option name="settings">
       <map>
+        <entry key="SecurityAnalysis.canShowProblemTab" value="false" />
         <entry key="confirm.rerun.with.termination" value="false" />
         <entry key="gateway.wsl.open.projects.natively" value="true" />
         <entry key="ide.ui.native.file.chooser" value="true" />
