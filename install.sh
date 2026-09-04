@@ -2,6 +2,7 @@
 
 set -e
 
+EMAIL="$1"
 OS="$(uname -s)"
 
 log() {
@@ -17,11 +18,11 @@ title() {
 case "$OS" in
     Darwin)
         title "Configurando ambiente para $OS"
-        ./macos.sh
+        ./macos.sh "$EMAIL"
         ;;
     Linux)
         title "Configurando ambiente para $OS"
-        ./linux.sh
+        ./linux.sh "$EMAIL"
         ;;
     *)
         title "Sistema não suportado: $OS"

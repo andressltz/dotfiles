@@ -2,14 +2,20 @@
 
 set -e
 
+GIT_EMAIL="$1"
+
 log() {
-    echo "🟡 ==> $1"
+    echo ""
+    echo "🔴 ==> $1 🔴 <=="
+    echo ""
 }
 
 title() {
+    echo ""
     echo "####################################"
     echo "🟡 ==> $1"
     echo "####################################"
+    echo ""
 }
 
 install_oh_my_zsh() {
@@ -61,7 +67,9 @@ cp ~/.gitignore ~/.gitignore.bak
 cp .gitconfig ~/.gitconfig
 cp .gitignore ~/.gitignore
 
-read -rp "E-mail para os commits: " GIT_EMAIL
+if [[ -z "$GIT_EMAIL" ]]; then
+    read -rp "E-mail para os commits: " GIT_EMAIL
+fi
 git config --global user.email "$GIT_EMAIL"
 
 # ln -s ~/.zshrc ~/dev/home/.zshrc
@@ -84,5 +92,4 @@ install_brew_package openjdk@8
 install_brew_package openjdk@21
 install_brew_package maven
 
-echo
 log "Common environment configured."

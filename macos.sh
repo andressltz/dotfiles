@@ -2,14 +2,20 @@
 
 set -e
 
+EMAIL="$1"
+
 log() {
-    echo "🟡 ==> $1"
+    echo ""
+    echo "🔴 ==> $1 🔴 <=="
+    echo ""
 }
 
 title() {
+    echo ""
     echo "####################################"
     echo "🟡 ==> $1"
     echo "####################################"
+    echo ""
 }
 
 title "Installing basic dependencies (ZSH, Homebrew)"
@@ -19,7 +25,7 @@ title "Installing Homebrew"
 
 title "Installing ZSH"
 if command -v zsh >/dev/null 2>&1; then
-    log "Zsh já está instalado."
+    log "ZSH já está instalado."
 else
     brew install zsh
     chsh -s $(which zsh)
@@ -37,7 +43,7 @@ title "Configuring macOS defaults"
 # Show X apps recents in Dock
 alias setRecents="defaults write com.apple.dock show-recent-count -int 4"
 
-./common.sh
+./common.sh "$EMAIL"
 
 title "Installing Homebrew packages for macOS"
 # brew install --cask zulu@8
