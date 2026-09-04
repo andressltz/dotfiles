@@ -21,11 +21,13 @@ title() {
 title "Installing basic dependencies (ZSH, Homebrew)"
 
 sudo apt update
-sudo apt install -y \
+sudo apt-get install -y \
     curl \
     git \
     zsh \
     unzip \
+    procps \
+    file \
     build-essential
 
 title "Installing ZSH"

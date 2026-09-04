@@ -46,6 +46,10 @@ install_oh_my_zsh() {
 
     cp ~/.zshrc ~/.zshrc.bak
     cp .zshrc ~/.zshrc
+
+    echo >> ~/.zshrc
+    echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"' >> ~/.zshrc
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 }
 
 install_brew_package() {
