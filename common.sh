@@ -3,6 +3,7 @@
 set -e
 
 GIT_EMAIL="$1"
+OS="$(uname -s)"
 
 log() {
     echo ""
@@ -47,9 +48,19 @@ install_oh_my_zsh() {
     cp ~/.zshrc ~/.zshrc.bak
     cp .zshrc ~/.zshrc
 
-    echo >> ~/.zshrc
-    echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"' >> ~/.zshrc
-    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+    case "$OS" in
+    Darwin)
+        echo ""
+        ;;
+    Linux)
+        echo >> ~/.zshrc
+        echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"' >> ~/.zshrc
+        ;;
+    *)
+        title "Sistema não suportado: $OS"
+        exit 1
+        ;;
+    esac
 }
 
 install_brew_package() {
