@@ -34,18 +34,8 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 
 ./common.sh
 
-echo "==> Installing Homebrew packages"
+echo "==> Installing Homebrew packages for Linux"
+brew install docker-engine
 brew install openjdk@8
-brew install openjdk@11
-brew install openjdk@17
-brew install openjdk@21
-
-echo "==> Installing Yarn"
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get update && sudo apt-get install yarn
-
-# sudo apt install maven -y
-brew install maven
-
-brew install docker
+# brew install openjdk@11
+# brew install openjdk@17

@@ -19,16 +19,16 @@ install_oh_my_zsh() {
     echo "==> Installing plugins for Oh My Zsh..."
     
     echo "==> Installing zsh-autosuggestions"
-    # git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/dev/andressltz/dotfiles/zsh/custom}/plugins/zsh-autosuggestions
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/dev/andressltz/dotfiles/zsh/custom}/plugins/zsh-autosuggestions
+    # git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
     echo "==> Installing F-Sy-H"
-    # git clone https://github.com/z-shell/F-Sy-H.git ${ZSH_CUSTOM:-~/dev/andressltz/dotfiles/zsh/custom}/plugins/F-Sy-H
-    git clone https://github.com/z-shell/F-Sy-H.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/F-Sy-H
+    git clone https://github.com/z-shell/F-Sy-H.git ${ZSH_CUSTOM:-~/dev/andressltz/dotfiles/zsh/custom}/plugins/F-Sy-H
+    # git clone https://github.com/z-shell/F-Sy-H.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/F-Sy-H
 
     echo "==> Installing zsh-completions"
-    # git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-~/dev/andressltz/dotfiles/zsh/custom}/plugins/zsh-completions
-    git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
+    git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-~/dev/andressltz/dotfiles/zsh/custom}/plugins/zsh-completions
+    # git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
 }
 
 install_brew_package() {
@@ -58,9 +58,18 @@ git config --global user.email "$GIT_EMAIL"
 
 echo "==> Installing NVM (Node Version Manager)"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 nvm install --lts
 nvm use --lts
-nvm default --lts
+
+echo "==> Installing Homebrew packages"
+install_brew_package docker
+install_brew_package openjdk@21
+install_brew_package maven
 
 echo
 echo "==> Common environment configured."

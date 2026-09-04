@@ -29,14 +29,7 @@ alias setRecents="defaults write com.apple.dock show-recent-count -int 4"
 
 ./common.sh
 
-echo "==> Installing Homebrew packages"
+echo "==> Installing Homebrew packages for macOS"
 brew install --cask zulu@8
 brew install --cask sapmachine11-jdk
 brew install --cask sapmachine17-jdk
-brew install openjdk@21
-
-brew install yarn --without-node
-
-brew install maven
-
-brew install docker
