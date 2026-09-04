@@ -2,49 +2,59 @@
 
 set -e
 
-echo "==> Configuring common environment"
+log() {
+    echo "🟡 ==> $1"
+}
+
+title() {
+    echo "####################################"
+    echo "🟡 ==> $1"
+    echo "####################################"
+}
 
 install_oh_my_zsh() {
     if [[ -d "$HOME/.oh-my-zsh" ]]; then
-        echo "Oh My Zsh already installed."
+        log "Oh My Zsh already installed."
         return
     fi
 
-    echo "==> Installing Oh My Zsh..."
+    title "Installing Oh My Zsh..."
 
     RUNZSH=no \
     CHSH=no \
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-    echo "==> Installing plugins for Oh My Zsh..."
-    
-    echo "==> Installing zsh-autosuggestions"
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/dev/andressltz/dotfiles/zsh/custom}/plugins/zsh-autosuggestions
-    # git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    title "Installing theme for Oh My Zsh..."
+    cp zsh/custom/themes/agnoster-customized.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/agnoster-customized.zsh-theme
 
-    echo "==> Installing F-Sy-H"
-    git clone https://github.com/z-shell/F-Sy-H.git ${ZSH_CUSTOM:-~/dev/andressltz/dotfiles/zsh/custom}/plugins/F-Sy-H
-    # git clone https://github.com/z-shell/F-Sy-H.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/F-Sy-H
+    title "Installing plugins for Oh My Zsh..."
 
-    echo "==> Installing zsh-completions"
-    git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-~/dev/andressltz/dotfiles/zsh/custom}/plugins/zsh-completions
-    # git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
+    title "Installing zsh-autosuggestions"
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+    title "Installing F-Sy-H"
+    git clone https://github.com/z-shell/F-Sy-H.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/F-Sy-H
+
+    title "Installing zsh-completions"
+    git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
 }
 
 install_brew_package() {
     local package="$1"
 
     if ! command -v "$package" >/dev/null 2>&1; then
-        echo "==> Installing $package"
+        title "Installing $package"
         brew install "$package"
     else
-        echo "==> $package already installed"
+        log "$package already installed"
     fi
 }
 
+title "Configuring common environment"
+
 install_oh_my_zsh
 
-echo "==> Configuring Git"
+title "Configuring Git"
 cp ~/.gitconfig ~/.gitconfig.bak
 cp ~/.gitignore ~/.gitignore.bak
 
@@ -56,7 +66,7 @@ git config --global user.email "$GIT_EMAIL"
 
 # ln -s ~/.zshrc ~/dev/home/.zshrc
 
-echo "==> Installing NVM (Node Version Manager)"
+title "Installing NVM (Node Version Manager)"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 
 export NVM_DIR="$HOME/.nvm"
@@ -66,10 +76,13 @@ export NVM_DIR="$HOME/.nvm"
 nvm install --lts
 nvm use --lts
 
-echo "==> Installing Homebrew packages"
+title "Installing Homebrew packages"
 install_brew_package docker
+install_brew_package openjdk@8
+# install_brew_package openjdk@11
+# install_brew_package openjdk@17
 install_brew_package openjdk@21
 install_brew_package maven
 
 echo
-echo "==> Common environment configured."
+log "Common environment configured."

@@ -4,17 +4,27 @@ set -e
 
 OS="$(uname -s)"
 
+log() {
+    echo "🟡 ==> $1"
+}
+
+title() {
+    echo "####################################"
+    echo "🟡 ==> $1"
+    echo "####################################"
+}
+
 case "$OS" in
     Darwin)
-        echo "==> Configurando ambiente para $OS"
+        title "Configurando ambiente para $OS"
         ./macos.sh
         ;;
     Linux)
-        echo "==> Configurando ambiente para $OS"
+        title "Configurando ambiente para $OS"
         ./linux.sh
         ;;
     *)
-        echo "Sistema não suportado: $OS"
+        title "Sistema não suportado: $OS"
         exit 1
         ;;
 esac

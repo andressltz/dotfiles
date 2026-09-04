@@ -63,7 +63,7 @@ ZSH_THEME="agnoster-customized"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=~/dev/andressltz/dotfiles/zsh/custom
+# ZSH_CUSTOM=~/dev/andressltz/dotfiles/zsh/custom
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -108,18 +108,19 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - bash)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init - bash)"
 
+# JDKs Env - Only macOS
 # Installed by brew install --cask zulu@8
-export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+# export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
 # Installed by brew install --cask sapmachine11-jdk
-export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
+# export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
 # Installed by brew install --cask sapmachine17-jdk
-export JAVA_17_HOME=$(/usr/libexec/java_home -v17)
+# export JAVA_17_HOME=$(/usr/libexec/java_home -v17)
 # Installed by brew install openjdk@21
-export JAVA_21_HOME=$(/usr/libexec/java_home -v21)
+# export JAVA_21_HOME=$(/usr/libexec/java_home -v21)
 
 alias java8='export JAVA_HOME=$JAVA_8_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
 alias java11='export JAVA_HOME=$JAVA_11_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
@@ -134,8 +135,8 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 #export PATH=$PATH:/opt/homebrew/bin/virtualenv
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init - zsh)"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init - zsh)"
 
 # Disable homebrew auto-update when install a new formula
 export HOMEBREW_NO_AUTO_UPDATE=1
