@@ -40,9 +40,6 @@ fi
 title "Installing Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-cp ~/.zshrc ~/.zshrc.bak
-cp .zshrc ~/.zshrc
-
 title "Configuring Homebrew on ZSH"
 echo >> ~/.zshrc
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"' >> ~/.zshrc
@@ -52,8 +49,8 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 
 title "Installing Homebrew packages for Linux"
 brew install docker-engine
-if ! groups "$USER" | grep -q '\bdocker\b'; then
-    log "Adicionando $USER ao grupo docker"
-    sudo usermod -aG docker "$USER"
-    newgrp docker
-fi
+# if ! groups "$USER" | grep -q '\bdocker\b'; then
+    # log "Adicionando $USER ao grupo docker"
+    # sudo usermod -aG docker "$USER"
+    # newgrp docker
+# fi

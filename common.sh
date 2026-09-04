@@ -43,6 +43,9 @@ install_oh_my_zsh() {
 
     title "Installing zsh-completions"
     git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
+
+    cp ~/.zshrc ~/.zshrc.bak
+    cp .zshrc ~/.zshrc
 }
 
 install_brew_package() {

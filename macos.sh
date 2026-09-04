@@ -31,9 +31,6 @@ else
     chsh -s $(which zsh)
 fi
 
-cp ~/.zshrc ~/.zshrc.bak
-cp .zshrc ~/.zshrc
-
 title "Configuring Homebrew on ZSH"
 # echo >> ~/.zshrc
 # echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"' >> ~/.zshrc
