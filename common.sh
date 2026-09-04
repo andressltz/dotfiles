@@ -2,35 +2,40 @@
 
 set -e
 
-echo "==> Configurando ambiente comum"
+echo "==> Configuring common environment"
 
 install_oh_my_zsh() {
     if [[ -d "$HOME/.oh-my-zsh" ]]; then
-        echo "Oh My Zsh já está instalado."
+        echo "Oh My Zsh already installed."
         return
     fi
 
-    echo "Instalando Oh My Zsh..."
+    echo "==> Installing Oh My Zsh..."
 
     RUNZSH=no \
     CHSH=no \
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-    # git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-    # git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
-    # git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-    # git clone https://github.com/z-shell/F-Sy-H.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/F-Sy-H
-    # git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
+    echo "==> Installing plugins for Oh My Zsh..."
+    
+    echo "==> Installing zsh-autosuggestions"
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/dev/andressltz/dotfiles/zsh/custom}/plugins/zsh-autosuggestions
+
+    echo "==> Installing F-Sy-H"
+    git clone https://github.com/z-shell/F-Sy-H.git ${ZSH_CUSTOM:-~/dev/andressltz/dotfiles/zsh/custom}/plugins/F-Sy-H
+
+    echo "==> Installing zsh-completions"
+    git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-~/dev/andressltz/dotfiles/zsh/custom}/plugins/zsh-completions
 }
 
 install_brew_package() {
     local package="$1"
 
     if ! command -v "$package" >/dev/null 2>&1; then
-        echo "==> Instalando $package"
+        echo "==> Installing $package"
         brew install "$package"
     else
-        echo "==> $package já instalado"
+        echo "==> $package already installed"
     fi
 }
 
@@ -43,10 +48,16 @@ cp ~/.gitignore ~/.gitignore.bak
 cp .gitconfig ~/.gitconfig
 cp .gitignore ~/.gitignore
 
+read -rp "E-mail para os commits: " GIT_EMAIL
+git config --global user.email "$GIT_EMAIL"
+
 # ln -s ~/.zshrc ~/dev/home/.zshrc
 
-# echo "==> Installing Homebrew packages"
-# install_brew_package "git"
+echo "==> Installing NVM (Node Version Manager)"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+nvm install --lts
+nvm use --lts
+nvm default --lts
 
 echo
-echo "==> Ambiente comum configurado."
+echo "==> Common environment configured."

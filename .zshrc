@@ -7,12 +7,12 @@ export ZSH="$HOME/.oh-my-zsh"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="agnoster-customized"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+# a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
@@ -23,17 +23,16 @@ ZSH_THEME="agnoster-customized"
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle ':omz:update' mode disabled  # disable automatic updates
+# zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+# zstyle ':omz:update' frequency 13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS=true
+# DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -45,6 +44,9 @@ ZSH_THEME="agnoster-customized"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
+# You can also set it to another string to have that shown instead of the default red dots.
+# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
+# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
 # COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -64,12 +66,11 @@ ZSH_THEME="agnoster-customized"
 ZSH_CUSTOM=~/dev/andressltz/dotfiles/zsh/custom
 
 # Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  # zsh-syntax-highlighting (não testado)
   zsh-autosuggestions
   F-Sy-H
 )
@@ -102,21 +103,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# WSL alias
-# alias morning=". ~/bomdia.sh"
-# alias hybris="sh ~/dev/arezzo/ecommerce/hybris/bin/platform/hybrisserver.sh debug"
-# alias intellij="sh /home/andreswinck/dev/tools/intellij/bin/idea.sh"
-# alias lsh="ls -lah"
-# alias chrome="google-chrome"
-# alias limpa="echo 1 | sudo tee /proc/sys/vm/drop_caches"
-# alias ip="ip add"
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -153,7 +139,6 @@ eval "$(rbenv init - zsh)"
 
 # Disable homebrew auto-update when install a new formula
 export HOMEBREW_NO_AUTO_UPDATE=1
-# export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
 
 # Hybris
 alias antall='java11 && hybrisbin && . ./setantenv.sh && ant all'
@@ -173,34 +158,41 @@ alias pecback='java8 && cd ~/dev/unimed/pec/pec-wsclient && mvn clean install -D
 alias peccibuildlog='java8 && cd ~/dev/unimed/pec && mvn clean verify -f pom.xml -U -Dspring.profiles.active=build -Duser.language=pt -Duser.country=BR -Duser.timezone=America/Bahia -l build_ci.log'
 alias peccibuild='java8 && cd ~/dev/unimed/pec && mvn clean verify -f pom.xml -U -Dspring.profiles.active=build -Duser.language=pt -Duser.country=BR -Duser.timezone=America/Bahia'
 
-# My Alias
-alias home='cd ~'
+# My Alias macOS
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+# Show/hide icons in Desktop. Use to share screen with privacity
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+# My Alias general
 alias dev='cd ~/dev'
 alias wakeup='caffeinate -di'
 alias week='date +%V'
 alias localip="ipconfig getifaddr en0 && hostname"
 alias killtomcat="ps -ef | grep -i tomcat | grep -v grep | awk '{ print "kill -9 " $2}'|zsh"
-# Show/hide hidden files in Finder
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
-# Show X apps recents in Dock
-alias setRecents="defaults write com.apple.dock show-recent-count -int 6"
 # npm install -g http-server
 alias server="http-server -c-1"
 # alias http-server='docker run -p 8000:80 -v $(pwd):/usr/share/nginx/html nginx'
+# Clean memory on Windows because WSL2 has a memory leak problem
+alias limpamem="echo 1 | sudo tee /proc/sys/vm/drop_caches"
+alias ip="ip add" # WSL
 alias sshconnect='sshpass -p "pss" ssh -oStrictHostKeyChecking=no "usr"@"host" -p "port"'
-alias killtomcat="ps -ef | grep -i tomcat | grep -v grep | awk '{ print "kill -9 " $2}'|zsh"
-# Show/hide icons in Desktop. Use to share screen with privacity
-alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 alias zshconfig="mate ~/.zshrc"
 alias clean="git limpa && git branch -vv | grep 'gone]' | awk '{print $1}' | xargs git branch -D"
-alias dns="sh ~/dev/andressltz/dotfiles/scripts/dns-test.sh"
 alias meld='/Applications/Meld.app/Contents/MacOS/Meld'
 alias k="kubectl"
 alias m2="open ~/.m2"
 alias gitls="sh ~/dev/andressltz/dotfiles/scripts/list_git_projects.sh"
 alias gitbrd="sh ~/dev/andressltz/dotfiles/scripts/remove_deleted_branches.sh"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
 
 # Default
 java21

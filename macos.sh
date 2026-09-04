@@ -23,4 +23,20 @@ echo "==> Configuring Homebrew on ZSH"
 # echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"' >> ~/.zshrc
 # eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 
+echo "==> Configuring macOS defaults"
+# Show X apps recents in Dock
+alias setRecents="defaults write com.apple.dock show-recent-count -int 4"
+
 ./common.sh
+
+echo "==> Installing Homebrew packages"
+brew install --cask zulu@8
+brew install --cask sapmachine11-jdk
+brew install --cask sapmachine17-jdk
+brew install openjdk@21
+
+brew install yarn --without-node
+
+brew install maven
+
+brew install docker
