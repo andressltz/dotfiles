@@ -123,6 +123,12 @@ export NVM_DIR="$HOME/.nvm"
 # Installed by brew install openjdk@21
 # export JAVA_21_HOME=$(/usr/libexec/java_home -v21)
 
+# JDKs Env - Only Linux
+export JAVA_8_HOME='/home/linuxbrew/.linuxbrew/opt/openjdk@8/libexec'
+export JAVA_11_HOME='/home/linuxbrew/.linuxbrew/opt/openjdk@11/libexec'
+export JAVA_17_HOME='/home/linuxbrew/.linuxbrew/opt/openjdk@17/libexec'
+export JAVA_21_HOME='/home/linuxbrew/.linuxbrew/opt/openjdk@21/libexec'
+
 alias java8='export JAVA_HOME=$JAVA_8_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
 alias java11='export JAVA_HOME=$JAVA_11_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
 alias java17='export JAVA_HOME=$JAVA_17_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
