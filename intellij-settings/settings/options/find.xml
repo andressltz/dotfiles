@@ -1,8 +1,8 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="Project Files" />
-    <option name="defaultScopeName" value="Project Files" />
-    <option name="SEARCH_SCOPE" value="Project Files" />
+    <option name="customScope" value="All Places" />
+    <option name="defaultScopeName" value="All Places" />
+    <option name="SEARCH_SCOPE" value="All Places" />
     <mask>*.html</mask>
     <mask>*.vm</mask>
     <mask>*Action*.java</mask>
@@ -12,20 +12,22 @@
     <mask>*.css</mask>
     <mask>*.jsp</mask>
     <mask>*Filter*.java</mask>
-    <mask>*Repository.java</mask>
-    <mask>*.yml</mask>
     <mask>*.properties</mask>
     <mask>*RestController.java</mask>
     <mask>*FeignApi.java</mask>
-    <mask>*.xml</mask>
     <mask>!*RepositoryTest.java</mask>
     <mask>*.json</mask>
-    <mask>*.java</mask>
     <mask>*Test.java</mask>
     <mask>*Controller.java</mask>
     <mask>*Controlador.java</mask>
-    <mask>*Test*.java</mask>
-    <mask>*.sql</mask>
+    <mask>*.yml</mask>
     <mask>!*Test.java</mask>
+    <mask>*.sql</mask>
+    <mask>*Repository.java</mask>
+    <mask>*.xml</mask>
+    <mask>*Test*.java</mask>
+    <mask>*.py</mask>
+    <mask>!*.md</mask>
+    <mask>*.java</mask>
   </component>
 </application>

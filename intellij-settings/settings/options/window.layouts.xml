@@ -1,0 +1,617 @@
+<application>
+  <component name="ToolWindowLayout"><![CDATA[{
+  "activeLayoutName": "Uma tela",
+  "layouts": {
+    "4k completo": {
+      "v2": [
+        {
+          "id": "Project",
+          "order": 0,
+          "contentUiType": "COMBO",
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.19140625
+        },
+        {
+          "id": "Commit",
+          "order": 1,
+          "weight": 0.25
+        },
+        {
+          "id": "Welcome to SonarQube for IDE",
+          "order": 2,
+          "weight": 0.32994792
+        },
+        {
+          "id": "Merge Requests",
+          "order": 3,
+          "weight": 0.17421874
+        },
+        {
+          "id": "Structure",
+          "order": 4,
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.19140625,
+          "isSplit": true
+        },
+        {
+          "id": "Terminal",
+          "order": 0,
+          "anchor": "BOTTOM",
+          "weight": 0.33033174,
+          "sideWeight": 0.3929342,
+          "isSplit": true
+        },
+        {
+          "id": "Version Control",
+          "order": 1,
+          "anchor": "BOTTOM"
+        },
+        {
+          "id": "Problems",
+          "order": 2,
+          "anchor": "BOTTOM"
+        },
+        {
+          "id": "Problems View",
+          "order": 3,
+          "anchor": "BOTTOM"
+        },
+        {
+          "id": "SonarQube for IDE",
+          "order": 4,
+          "anchor": "BOTTOM"
+        },
+        {
+          "id": "Services",
+          "order": 5,
+          "anchor": "BOTTOM",
+          "isVisible": true,
+          "weight": 0.33033174,
+          "sideWeight": 0.6070658
+        },
+        {
+          "id": "Run",
+          "order": 6,
+          "anchor": "BOTTOM",
+          "weight": 0.33033174,
+          "sideWeight": 0.54719526
+        },
+        {
+          "id": "Build",
+          "order": 7,
+          "anchor": "BOTTOM"
+        },
+        {
+          "id": "Find",
+          "order": 8,
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false,
+          "weight": 0.33033174
+        },
+        {
+          "id": "Debug",
+          "order": 9,
+          "anchor": "BOTTOM",
+          "weight": 0.33033174
+        },
+        {
+          "id": "Notifications",
+          "order": 0,
+          "anchor": "RIGHT",
+          "weight": 0.31588542
+        },
+        {
+          "id": "AIAssistant",
+          "order": 1,
+          "anchor": "RIGHT",
+          "weight": 0.31588542
+        },
+        {
+          "id": "Database",
+          "order": 2,
+          "anchor": "RIGHT",
+          "weight": 0.25
+        },
+        {
+          "id": "Gradle",
+          "order": 3,
+          "anchor": "RIGHT",
+          "weight": 0.25
+        },
+        {
+          "id": "Translation.Wordbook",
+          "order": 4,
+          "anchor": "RIGHT",
+          "isSplit": true
+        },
+        {
+          "id": "Maven",
+          "order": 5,
+          "anchor": "RIGHT",
+          "weight": 0.31588542
+        },
+        {
+          "id": "Meet New UI",
+          "order": 6,
+          "anchor": "RIGHT",
+          "isShowStripeButton": false,
+          "weight": 0.2502604
+        },
+        {
+          "id": "Endpoints",
+          "order": 7,
+          "anchor": "RIGHT",
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.20026042
+        }
+      ],
+      "unifiedWeights": {
+        "top": 0.33,
+        "left": 0.19140625,
+        "bottom": 0.33033174,
+        "right": 0.20026042
+      }
+    },
+    "andres": {
+      "v2": [
+        {
+          "id": "Bookmarks",
+          "isShowStripeButton": false,
+          "isSplit": true
+        },
+        {
+          "id": "ORM",
+          "isShowStripeButton": false,
+          "isSplit": true
+        },
+        {
+          "id": "Backup and Sync History",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Pull Requests",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Learn",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Project",
+          "order": 0,
+          "contentUiType": "COMBO",
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.15947941
+        },
+        {
+          "id": "Commit",
+          "order": 1,
+          "weight": 0.16894531
+        },
+        {
+          "id": "Welcome to SonarQube for IDE",
+          "order": 2,
+          "weight": 0.32994792
+        },
+        {
+          "id": "Merge Requests",
+          "order": 3,
+          "weight": 0.17421874
+        },
+        {
+          "id": "Structure",
+          "order": 4,
+          "weight": 0.19192708,
+          "isSplit": true
+        },
+        {
+          "id": "Database Changes",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "TypeScript",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Profiler",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "TODO",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Terminal",
+          "order": 0,
+          "anchor": "BOTTOM",
+          "weight": 0.33021146,
+          "sideWeight": 0.33640283,
+          "isSplit": true
+        },
+        {
+          "id": "Version Control",
+          "order": 1,
+          "anchor": "BOTTOM",
+          "weight": 0.35079366,
+          "sideWeight": 0.5002005
+        },
+        {
+          "id": "Problems",
+          "order": 2,
+          "anchor": "BOTTOM"
+        },
+        {
+          "id": "Problems View",
+          "order": 3,
+          "anchor": "BOTTOM",
+          "weight": 0.34647804
+        },
+        {
+          "id": "SonarQube for IDE",
+          "order": 4,
+          "anchor": "BOTTOM",
+          "weight": 0.34743312,
+          "sideWeight": 0.5002005
+        },
+        {
+          "id": "Services",
+          "order": 5,
+          "anchor": "BOTTOM",
+          "weight": 0.30483383,
+          "sideWeight": 0.7051326
+        },
+        {
+          "id": "Run",
+          "order": 6,
+          "anchor": "BOTTOM",
+          "isVisible": true,
+          "weight": 0.33021146,
+          "sideWeight": 0.66359717
+        },
+        {
+          "id": "Build",
+          "order": 7,
+          "anchor": "BOTTOM",
+          "weight": 0.34647804,
+          "sideWeight": 0.5406977
+        },
+        {
+          "id": "Find",
+          "order": 8,
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false,
+          "weight": 0.33021146
+        },
+        {
+          "id": "Debug",
+          "order": 9,
+          "anchor": "BOTTOM",
+          "weight": 0.33021146,
+          "sideWeight": 0.52465916
+        },
+        {
+          "id": "PR AI Assistant",
+          "anchor": "RIGHT",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "documentation.v2",
+          "anchor": "RIGHT",
+          "isShowStripeButton": false,
+          "isSplit": true
+        },
+        {
+          "id": "Coverage",
+          "anchor": "RIGHT",
+          "isShowStripeButton": false,
+          "isSplit": true
+        },
+        {
+          "id": "Beans",
+          "anchor": "RIGHT",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Notifications",
+          "order": 0,
+          "anchor": "RIGHT",
+          "weight": 0.20019531
+        },
+        {
+          "id": "AIAssistant",
+          "order": 1,
+          "anchor": "RIGHT",
+          "weight": 0.31588542
+        },
+        {
+          "id": "Database",
+          "order": 2,
+          "anchor": "RIGHT",
+          "weight": 0.25
+        },
+        {
+          "id": "Gradle",
+          "order": 3,
+          "anchor": "RIGHT",
+          "weight": 0.25
+        },
+        {
+          "id": "Translation.Wordbook",
+          "order": 4,
+          "anchor": "RIGHT",
+          "isSplit": true
+        },
+        {
+          "id": "Maven",
+          "order": 5,
+          "anchor": "RIGHT",
+          "weight": 0.20019531
+        },
+        {
+          "id": "Meet New UI",
+          "order": 6,
+          "anchor": "RIGHT",
+          "isShowStripeButton": false,
+          "weight": 0.2502604
+        },
+        {
+          "id": "Endpoints",
+          "order": 7,
+          "anchor": "RIGHT",
+          "weight": 0.20019531
+        }
+      ],
+      "unifiedWeights": {
+        "top": 0.33,
+        "left": 0.15947941,
+        "bottom": 0.33021146,
+        "right": 0.20019531
+      }
+    },
+    "Uma tela": {
+      "v2": [
+        {
+          "id": "Bookmarks",
+          "isShowStripeButton": false,
+          "isSplit": true
+        },
+        {
+          "id": "ORM",
+          "isShowStripeButton": false,
+          "isSplit": true
+        },
+        {
+          "id": "Backup and Sync History",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Pull Requests",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Learn",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Project",
+          "order": 0,
+          "contentUiType": "COMBO",
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.1597473
+        },
+        {
+          "id": "Commit",
+          "order": 1,
+          "weight": 0.16894531
+        },
+        {
+          "id": "Welcome to SonarQube for IDE",
+          "order": 2,
+          "weight": 0.32994792
+        },
+        {
+          "id": "Merge Requests",
+          "order": 3,
+          "weight": 0.17421874
+        },
+        {
+          "id": "Structure",
+          "order": 4,
+          "weight": 0.19192708,
+          "isSplit": true
+        },
+        {
+          "id": "Database Changes",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "TypeScript",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Profiler",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "TODO",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "File Transfer",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Terminal",
+          "order": 0,
+          "anchor": "BOTTOM",
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.2951389,
+          "sideWeight": 0.33364663,
+          "isSplit": true
+        },
+        {
+          "id": "Version Control",
+          "order": 1,
+          "anchor": "BOTTOM",
+          "weight": 0.35079366,
+          "sideWeight": 0.5002005
+        },
+        {
+          "id": "Problems",
+          "order": 2,
+          "anchor": "BOTTOM"
+        },
+        {
+          "id": "Problems View",
+          "order": 3,
+          "anchor": "BOTTOM",
+          "weight": 0.34647804
+        },
+        {
+          "id": "SonarQube for IDE",
+          "order": 4,
+          "anchor": "BOTTOM",
+          "weight": 0.34743312,
+          "sideWeight": 0.5002005
+        },
+        {
+          "id": "Services",
+          "order": 5,
+          "anchor": "BOTTOM",
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.2951389,
+          "sideWeight": 0.6663534
+        },
+        {
+          "id": "Run",
+          "order": 6,
+          "anchor": "BOTTOM",
+          "isVisible": true,
+          "weight": 0.33021146,
+          "sideWeight": 0.66359717
+        },
+        {
+          "id": "Build",
+          "order": 7,
+          "anchor": "BOTTOM",
+          "weight": 0.34647804,
+          "sideWeight": 0.5406977
+        },
+        {
+          "id": "Find",
+          "order": 8,
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false,
+          "weight": 0.33021146
+        },
+        {
+          "id": "Debug",
+          "order": 9,
+          "anchor": "BOTTOM",
+          "weight": 0.33021146,
+          "sideWeight": 0.52465916
+        },
+        {
+          "id": "Code Provenance",
+          "anchor": "RIGHT",
+          "isShowStripeButton": false,
+          "isSplit": true
+        },
+        {
+          "id": "PR AI Assistant",
+          "anchor": "RIGHT",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "documentation.v2",
+          "anchor": "RIGHT",
+          "isShowStripeButton": false,
+          "isSplit": true
+        },
+        {
+          "id": "Coverage",
+          "anchor": "RIGHT",
+          "isShowStripeButton": false,
+          "isSplit": true
+        },
+        {
+          "id": "Beans",
+          "anchor": "RIGHT",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Notifications",
+          "order": 0,
+          "anchor": "RIGHT",
+          "weight": 0.20019531
+        },
+        {
+          "id": "AIAssistant",
+          "order": 1,
+          "anchor": "RIGHT",
+          "weight": 0.31588542
+        },
+        {
+          "id": "Database",
+          "order": 2,
+          "anchor": "RIGHT",
+          "weight": 0.25
+        },
+        {
+          "id": "Gradle",
+          "order": 3,
+          "anchor": "RIGHT",
+          "weight": 0.25
+        },
+        {
+          "id": "Translation.Wordbook",
+          "order": 4,
+          "anchor": "RIGHT",
+          "isSplit": true
+        },
+        {
+          "id": "Maven",
+          "order": 5,
+          "anchor": "RIGHT",
+          "weight": 0.20019531
+        },
+        {
+          "id": "Meet New UI",
+          "order": 6,
+          "anchor": "RIGHT",
+          "isShowStripeButton": false,
+          "weight": 0.2502604
+        },
+        {
+          "id": "Endpoints",
+          "order": 7,
+          "anchor": "RIGHT",
+          "weight": 0.20019531
+        }
+      ],
+      "unifiedWeights": {
+        "top": 0.33,
+        "left": 0.1597473,
+        "bottom": 0.2951389,
+        "right": 0.20019531
+      }
+    }
+  }
+}]]></component>
+</application>
