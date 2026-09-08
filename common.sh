@@ -78,6 +78,13 @@ title "Configuring common environment"
 
 install_oh_my_zsh
 
+title "Installing Fonts"
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
 title "Configuring Git"
 cp ~/.gitconfig ~/.gitconfig.bak
 cp ~/.gitignore ~/.gitignore.bak
