@@ -17,11 +17,15 @@
 	web-gitlab = "!open \"$(git remote get-url origin | sed -E 's#ssh://git@([^:/]+)(:[0-9]+)?/#https://\\1/#; s#\\.git$##')\""
 	web-github = "!open \"$(git remote get-url origin | sed -E 's#git@([^:]+):#https://\\1/#; s#ssh://git@([^:/]+)(:[0-9]+)?/#https://\\1/#; s#\\.git$##')\""
 [core]
-	editor = nano
-	# editor = mate -w
-	# editor = code --wait
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	excludesfile = ~/.gitignore
+# Linux
+	editor = nano
+# Windows
+	# editor = \"C:\\Users\\andreswinck\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+# macOS
+	# editor = mate --wait
+	# editor = code --wait
 [color]
 	ui = true
 [color "diff"]
