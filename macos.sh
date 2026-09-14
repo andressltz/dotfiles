@@ -18,6 +18,17 @@ title() {
     echo ""
 }
 
+install_brew_package() {
+    local package="$1"
+
+    if ! command -v "$package" >/dev/null 2>&1; then
+        title "Installing $package"
+        brew install "$package"
+    else
+        log "$package already installed"
+    fi
+}
+
 title "Installing basic dependencies (ZSH, Homebrew)"
 
 title "Installing Homebrew"
@@ -43,6 +54,10 @@ alias setRecents="defaults write com.apple.dock show-recent-count -int 4"
 ./common.sh "$EMAIL"
 
 title "Installing Homebrew packages for macOS"
-# brew install --cask zulu@8
-# brew install --cask sapmachine11-jdk
-# brew install --cask sapmachine17-jdk
+brew install --cask zulu@8
+brew install --cask sapmachine11-jdk
+brew install --cask sapmachine17-jdk
+# install_brew_package openjdk@8
+# install_brew_package openjdk@11
+# install_brew_package openjdk@17
+install_brew_package openjdk@21

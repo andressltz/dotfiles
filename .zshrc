@@ -70,12 +70,12 @@ ZSH_THEME="agnoster-customized"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( 
-  F-Sy-H 
+plugins=(
+  # F-Sy-H 
   zsh-autosuggestions
 )
 # zsh-autosuggestions precisa ficar no final da lista porque conflita as sugestões
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+# fpath+=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions/src
 
 source $ZSH/oh-my-zsh.sh
 
@@ -124,15 +124,15 @@ export NVM_DIR="$HOME/.nvm"
 # export JAVA_21_HOME=$(/usr/libexec/java_home -v21)
 
 # JDKs Env - Only Linux
-export JAVA_8_HOME='/home/linuxbrew/.linuxbrew/opt/openjdk@8/libexec'
-export JAVA_11_HOME='/home/linuxbrew/.linuxbrew/opt/openjdk@11/libexec'
-export JAVA_17_HOME='/home/linuxbrew/.linuxbrew/opt/openjdk@17/libexec'
-export JAVA_21_HOME='/home/linuxbrew/.linuxbrew/opt/openjdk@21/libexec'
+export JAVA_8_BREW_HOME='/home/linuxbrew/.linuxbrew/opt/openjdk@8/libexec'
+export JAVA_11_BREW_HOME='/home/linuxbrew/.linuxbrew/opt/openjdk@11/libexec'
+export JAVA_17_BREW_HOME='/home/linuxbrew/.linuxbrew/opt/openjdk@17/libexec'
+export JAVA_21_BREW_HOME='/home/linuxbrew/.linuxbrew/opt/openjdk@21/libexec'
 
-alias java8='export JAVA_HOME=$JAVA_8_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
-alias java11='export JAVA_HOME=$JAVA_11_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
-alias java17='export JAVA_HOME=$JAVA_17_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
-alias java21='export JAVA_HOME=$JAVA_21_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
+# alias java8='export JAVA_HOME=$JAVA_8_BREW_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
+# alias java11='export JAVA_HOME=$JAVA_11_BREW_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
+# alias java17='export JAVA_HOME=$JAVA_17_BREW_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
+# alias java21='export JAVA_HOME=$JAVA_21_BREW_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -147,6 +147,8 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Disable homebrew auto-update when install a new formula
 export HOMEBREW_NO_AUTO_UPDATE=1
+
+# source <(kubectl completion zsh)
 
 # Hybris
 alias antall='java11 && hybrisbin && . ./setantenv.sh && ant all'
@@ -187,7 +189,7 @@ alias server="http-server -c-1"
 alias limpamem="echo 1 | sudo tee /proc/sys/vm/drop_caches"
 alias ip="ip add" # WSL
 alias sshconnect='sshpass -p "pss" ssh -oStrictHostKeyChecking=no "usr"@"host" -p "port"'
-alias zshconfig="mate ~/.zshrc"
+alias zshconfig="code ~/.zshrc"
 alias clean="git limpa && git branch -vv | grep 'gone]' | awk '{print $1}' | xargs git branch -D"
 alias meld='/Applications/Meld.app/Contents/MacOS/Meld'
 alias k="kubectl"
@@ -195,12 +197,14 @@ alias m2="open ~/.m2"
 alias gitls="sh ~/dev/andressltz/dotfiles/scripts/list_git_projects.sh"
 alias gitbrd="sh ~/dev/andressltz/dotfiles/scripts/remove_deleted_branches.sh"
 
+# export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 
 # Default
+unimed
 java21

@@ -111,10 +111,7 @@ nvm use --lts
 
 title "Installing Homebrew packages"
 install_brew_package docker
-install_brew_package openjdk@8
-install_brew_package openjdk@11
-install_brew_package openjdk@17
-install_brew_package openjdk@21
+install_brew_package kubectl
 install_brew_package maven
 
 log "Common environment configured."
