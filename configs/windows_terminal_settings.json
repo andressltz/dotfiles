@@ -1,10 +1,28 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [],
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "right"
+            },
+            "id": "User.splitPane.864CD510"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "down"
+            },
+            "id": "User.splitPane.D5151347"
+        }
+    ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "defaultProfile": "{9cdaea88-208f-4dfd-8a78-f2a2876a39d1}",
     "keybindings": 
     [
         {
@@ -22,6 +40,14 @@
         {
             "id": "Terminal.DuplicatePaneAuto",
             "keys": "alt+shift+d"
+        },
+        {
+            "id": "User.splitPane.864CD510",
+            "keys": "ctrl+d"
+        },
+        {
+            "id": "User.splitPane.D5151347",
+            "keys": "ctrl+b"
         }
     ],
     "newTabMenu": 
@@ -66,7 +92,7 @@
                 "source": "Git"
             },
             {
-                "colorScheme": "Solarized Dark",
+                "colorScheme": "My Dark",
                 "commandline": "C:\\WINDOWS\\system32\\wsl.exe --distribution-id {67512a47-ea00-497b-b60b-817128cee347}",
                 "cursorShape": "bar",
                 "font": 
@@ -76,6 +102,7 @@
                 },
                 "guid": "{9cdaea88-208f-4dfd-8a78-f2a2876a39d1}",
                 "hidden": false,
+                "historySize": 80000,
                 "icon": "C:\\Users\\andreswinck\\AppData\\Local\\wsl\\{67512a47-ea00-497b-b60b-817128cee347}\\shortcut.ico",
                 "name": "My WSL",
                 "opacity": 90,
@@ -86,6 +113,31 @@
             }
         ]
     },
-    "schemes": [],
+    "schemes": 
+    [
+        {
+            "background": "#000405",
+            "black": "#002B36",
+            "blue": "#268BD2",
+            "brightBlack": "#073642",
+            "brightBlue": "#839496",
+            "brightCyan": "#93A1A1",
+            "brightGreen": "#586E75",
+            "brightPurple": "#6C71C4",
+            "brightRed": "#CB4B16",
+            "brightWhite": "#FDF6E3",
+            "brightYellow": "#657B83",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#2AA198",
+            "foreground": "#839496",
+            "green": "#859900",
+            "name": "My Dark",
+            "purple": "#D33682",
+            "red": "#DC322F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#EEE8D5",
+            "yellow": "#B58900"
+        }
+    ],
     "themes": []
 }
