@@ -15,6 +15,17 @@ title() {
     echo "####################################"
 }
 
+# echo "Verificando chaves SSH..."
+# SSH_KEY_PATH="$HOME/.ssh/id_rsa"
+
+# if [ ! -f "$SSH_KEY_PATH" ]; then
+#     echo "🔑 Chave SSH não encontrada. Gerando uma nova..."
+#     ssh-keygen -t rsa -C "$EMAIL" -f "$SSH_KEY_PATH" -N ""
+#     echo "✅ Chave SSH gerada com sucesso!"
+# else
+#     echo "✅ Chave SSH já existe em $SSH_KEY_PATH. Pulando criação."
+# fi
+
 case "$OS" in
     Darwin)
         title "Configurando ambiente para $OS"
