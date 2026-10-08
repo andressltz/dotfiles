@@ -80,20 +80,26 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "guid": "{3b11e3ed-e36f-50c6-aeac-53c8f0230b31}",
-                "hidden": false,
-                "name": "Ubuntu",
-                "source": "Microsoft.WSL"
-            },
-            {
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
                 "hidden": false,
                 "name": "Git Bash",
                 "source": "Git"
             },
             {
-                "colorScheme": "My Dark",
-                "commandline": "C:\\WINDOWS\\system32\\wsl.exe --distribution-id {67512a47-ea00-497b-b60b-817128cee347}",
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": true,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "colorScheme": "Andres",
+                "commandline": "ubuntu.exe",
                 "cursorShape": "bar",
                 "font": 
                 {
@@ -103,8 +109,8 @@
                 "guid": "{9cdaea88-208f-4dfd-8a78-f2a2876a39d1}",
                 "hidden": false,
                 "historySize": 80000,
-                "icon": "C:\\Users\\andreswinck\\AppData\\Local\\wsl\\{67512a47-ea00-497b-b60b-817128cee347}\\shortcut.ico",
-                "name": "My WSL",
+                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+                "name": "WSL Andres",
                 "opacity": 90,
                 "pathTranslationStyle": "wsl",
                 "startingDirectory": "~",
@@ -131,7 +137,7 @@
             "cyan": "#2AA198",
             "foreground": "#839496",
             "green": "#859900",
-            "name": "My Dark",
+            "name": "Andres",
             "purple": "#D33682",
             "red": "#DC322F",
             "selectionBackground": "#FFFFFF",

@@ -317,7 +317,7 @@
 			<value name="ToolbarAddSpace" type="long" data="0"/>
 			<value name="TabConsole" type="string" data="%c: %s"/>
 			<value name="TabModifiedSuffix" type="string" data="[*]"/>
-			<value name="TabSkipWords" type="string" data="Administrator:|MINGW64:|/c/dev/projetos/|"/>
+			<value name="TabSkipWords" type="string" data="Administrator:|MINGW64:|/c/Users/andreswinck/dev/|"/>
 			<value name="TabPanels" type="string" data="&lt;%c&gt; %s"/>
 			<value name="TabEditor" type="string" data="&lt;%c.%i&gt;{%s}"/>
 			<value name="TabEditorModified" type="string" data="&lt;%c.%i&gt;[%s] *"/>
@@ -690,13 +690,13 @@
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
-					<value name="Cmd1" type="string" data='"C:\Users\andreswinck\AppData\Local\Programs\Git\git-cmd.exe" --no-cd --command=usr/bin/bash.exe -l -i -new_console:d:C:\dev\renner\'/>
+					<value name="Cmd1" type="string" data='set "PATH=%ProgramFiles%\Git\usr\bin;%PATH%" &amp; %ProgramFiles%\Git\git-cmd.exe --no-cd --command=%ConEmuBaseDirShort%\conemu-msys2-64.exe /usr/bin/bash.exe -l -i -new_console:d:C:\Users\andreswinck\dev\'/>
 				</key>
 				<key name="Task12" modified="2020-02-27 09:03:02" build="191012">
 					<value name="Name" type="string" data="{Bash::ubuntu}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
-					<value name="GuiArgs" type="string" data='/icon "%USERPROFILE%\AppData\Local\lxss\bash.ico" /dir "C:\dev\"'/>
+					<value name="GuiArgs" type="string" data='/icon "%USERPROFILE%\AppData\Local\lxss\bash.ico" /dir "C:\Users\andreswinck\dev\"'/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data="%windir%\system32\bash.exe -c zsh -cur_console:p"/>
