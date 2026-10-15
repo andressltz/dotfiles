@@ -11,6 +11,7 @@ winget install -e --id Kubernetes.kubectl
 winget install Microsoft.Coreutils
 winget install Microsoft.PowerToys -s winget
 winget install Microsoft.PowerShell
+winget install -e --id Ditto.Ditto
 
 # Install WSL
 wsl --install
