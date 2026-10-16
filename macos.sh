@@ -61,3 +61,5 @@ brew install --cask sapmachine17-jdk
 # install_brew_package openjdk@11
 # install_brew_package openjdk@17
 install_brew_package openjdk@21
+
+install_brew_package maven

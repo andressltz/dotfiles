@@ -206,5 +206,3 @@ export SDKMAN_DIR="$HOME/.sdkman"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 
 # Default
-unimed
-java21

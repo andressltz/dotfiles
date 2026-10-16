@@ -86,8 +86,20 @@ cd ..
 rm -rf fonts
 
 title "Configuring Git"
-cp ~/.gitconfig ~/.gitconfig.bak
-cp ~/.gitignore ~/.gitignore.bak
+
+if [ -f "~/.gitconfig" ]; then
+    echo "📦 Arquivo .gitconfig existente encontrado. Criando backup para .gitconfig.bak..."
+    cp ~/.gitconfig ~/.gitconfig.bak
+else
+    echo "ℹ️ Nenhum .gitconfig anterior encontrado. Instalação limpa, pulando backup."
+fi
+
+if [ -f "~/.gitignore" ]; then
+    echo "📦 Arquivo .gitignore existente encontrado. Criando backup para .gitignore.bak..."
+    cp ~/.gitignore ~/.gitignore.bak
+else
+    echo "ℹ️ Nenhum .gitignore anterior encontrado. Instalação limpa, pulando backup."
+fi
 
 cp .gitconfig ~/.gitconfig
 cp .gitignore ~/.gitignore
@@ -112,6 +124,5 @@ nvm use --lts
 title "Installing Homebrew packages"
 install_brew_package docker
 install_brew_package kubectl
-install_brew_package maven
 
 log "Common environment configured."
