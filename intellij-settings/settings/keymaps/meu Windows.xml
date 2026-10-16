@@ -1,0 +1,17 @@
+<keymap version="1" name="meu Windows" parent="$default">
+  <action id="ChangesView.ShowCommitOptions" />
+  <action id="CloseContent">
+    <keyboard-shortcut first-keystroke="ctrl w" />
+  </action>
+  <action id="EditorSelectWord" />
+  <action id="OverrideMethods" />
+  <action id="SearchEverywhere">
+    <keyboard-gesture-shortcut keystroke="shift shift" modifier="dblClick" />
+    <keyboard-shortcut first-keystroke="ctrl o" />
+  </action>
+  <action id="SmartSelect" />
+  <action id="TableResult.GrowSelection" />
+  <action id="TableResult.SelectColumn" />
+  <action id="Terminal.DeletePreviousWord" />
+  <action id="UsageFiltering.WriteAccess" />
+</keymap>

@@ -140,6 +140,7 @@
         <entry key="$USER_HOME$/dev/unimed/unimedvtrp-spring" value="true" />
         <entry key="$USER_HOME$/dev/unimed/workspace" value="true" />
         <entry key="$USER_HOME$/dev/unimed/wsclient" value="true" />
+        <entry key="\\wsl.localhost\Ubuntu\home\andres\dev\unimed\siga" value="true" />
       </map>
     </option>
   </component>
@@ -148,6 +149,7 @@
       <list>
         <option value="$USER_HOME$/dev/arezzo/hybris2011" />
         <option value="$USER_HOME$/dev/arezzo" />
+        <option value="\\wsl.localhost\Ubuntu\home\andres\dev\unimed" />
       </list>
     </option>
   </component>

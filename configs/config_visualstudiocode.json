@@ -10,14 +10,9 @@
         "suppressLineUncommittedWarning": false,
         "suppressNoRepositoryWarning": false
     },
-    "workbench.editor.tabSizing": "shrink",
-    "editor.tabSize": 2,
-    "terminal.integrated.fontSize": 11,
-    // macOS
+    "window.zoomLevel": 0.5,
+    "terminal.integrated.fontSize": 12,
     "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline",
-    // Windows
-    "terminal.integrated.fontFamily": "Cascadia Mono Pl",
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "remote.autoForwardPortsSource": "hybrid",
     "json.schemaDownload.trustedDomains": {
         "https://aka.ms": true,
