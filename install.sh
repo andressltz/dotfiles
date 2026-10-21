@@ -29,7 +29,10 @@ fi
 
 if [ ! -f "$SSH_KEY_PATH" ]; then
     log "🔑 Chave SSH não encontrada. Gerando uma nova..."
-    ssh-keygen -t rsa -C "$EMAIL" -f "$SSH_KEY_PATH" -N ""
+    # ssh-keygen -t rsa -C "$EMAIL" -f "$SSH_KEY_PATH" -N ""
+    ssh-keygen -t rsa -b 4096 -C "$EMAIL" -f "$SSH_KEY_PATH" -N ""
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/id_rsa
     log "✅ Chave SSH gerada com sucesso!"
 else
     log "✅ Chave SSH já existe em $SSH_KEY_PATH. Pulando criação."
