@@ -4,12 +4,20 @@
     <keyboard-shortcut first-keystroke="ctrl w" />
   </action>
   <action id="EditorSelectWord" />
+  <action id="EvaluateExpression">
+    <keyboard-shortcut first-keystroke="alt f8" />
+    <keyboard-shortcut first-keystroke="ctrl e" />
+  </action>
   <action id="OverrideMethods" />
+  <action id="RecentFiles" />
+  <action id="RecentFilesFallback" />
   <action id="SearchEverywhere">
     <keyboard-gesture-shortcut keystroke="shift shift" modifier="dblClick" />
     <keyboard-shortcut first-keystroke="ctrl o" />
   </action>
   <action id="SmartSelect" />
+  <action id="SwitcherIterateItems" />
+  <action id="SwitcherRecentEditedChangedToggleCheckBox" />
   <action id="TableResult.GrowSelection" />
   <action id="TableResult.SelectColumn" />
   <action id="Terminal.DeletePreviousWord" />
