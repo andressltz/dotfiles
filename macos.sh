@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 set -e
 
@@ -29,18 +29,8 @@ install_brew_package() {
     fi
 }
 
-title "Installing basic dependencies (ZSH, Homebrew)"
-
 title "Installing Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-title "Installing ZSH"
-if command -v zsh >/dev/null 2>&1; then
-    log "ZSH já está instalado."
-else
-    brew install zsh
-    chsh -s $(which zsh)
-fi
 
 title "Configuring Homebrew on ZSH"
 # echo >> ~/.zshrc
@@ -48,10 +38,9 @@ title "Configuring Homebrew on ZSH"
 # eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 
 title "Configuring macOS defaults"
-# Show X apps recents in Dock
-alias setRecents="defaults write com.apple.dock show-recent-count -int 4"
 
-./common.sh "$EMAIL"
+# Show X apps recents in Dock
+defaults write com.apple.dock show-recent-count -int 4
 
 title "Installing Homebrew packages for macOS"
 brew install --cask zulu@8
@@ -63,3 +52,5 @@ brew install --cask sapmachine17-jdk
 install_brew_package openjdk@21
 
 install_brew_package maven
+
+./common.sh "$EMAIL"
