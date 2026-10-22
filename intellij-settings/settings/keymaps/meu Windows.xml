@@ -3,6 +3,11 @@
   <action id="CloseContent">
     <keyboard-shortcut first-keystroke="ctrl w" />
   </action>
+  <action id="EditorDeleteLine">
+    <keyboard-shortcut first-keystroke="ctrl y" />
+    <keyboard-shortcut first-keystroke="ctrl d" />
+  </action>
+  <action id="EditorDuplicate" />
   <action id="EditorSelectWord" />
   <action id="EvaluateExpression">
     <keyboard-shortcut first-keystroke="alt f8" />
