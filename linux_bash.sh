@@ -29,6 +29,7 @@ sudo apt-get install -y \
     unzip \
     procps \
     file \
+    htop \
     build-essential
 
 if [ -n "${BASH_VERSION:-}" ]; then
