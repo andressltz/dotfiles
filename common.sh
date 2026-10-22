@@ -155,5 +155,6 @@ nvm alias default 20
 title "Installing Homebrew packages"
 install_brew_package kubectl
 install_brew_package fastfetch
+install_brew_package diff-so-fancy
 
 log "Common environment configured."
