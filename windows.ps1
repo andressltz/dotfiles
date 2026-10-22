@@ -7,6 +7,7 @@ winget install -e --id Kubernetes.kubectl
 winget install Microsoft.Coreutils
 winget install Microsoft.PowerToys -s winget
 winget install -e --id Ditto.Ditto
+winget install fastfetch
 # https://git-scm.com/install/windows
 # https://conemu.github.io/en/Downloads.html
 # https://winmerge.org/downloads/?lang=en
