@@ -58,7 +58,9 @@
     ],
     "profiles": 
     {
-        "defaults": {},
+        "defaults": {
+             "rightClickContextMenu": true
+        },
         "list": 
         [
             {
