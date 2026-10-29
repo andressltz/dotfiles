@@ -30,7 +30,12 @@ echo "Diretório: $DIR"
 echo "Arquivo:   $ARQUIVO"
 echo
 
-zip -r "$ARQUIVO" "$DIR" \
+# Remove ZIP antigo, se existir
+rm -f "$ARQUIVO"
+
+# Entra no diretório pai e compacta somente o nome da pasta
+cd "$PAI" || exit 1
+zip -r "$ARQUIVO" "$NOME" \
     -x "*/__MACOSX/*" \
     -x "*/.DS_Store" \
     -x "*/._*" \
