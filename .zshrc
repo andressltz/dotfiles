@@ -113,27 +113,6 @@ export NVM_DIR="$HOME/.nvm"
 # [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 # eval "$(pyenv init - bash)"
 
-# JDKs Env - Only macOS
-# Installed by brew install --cask zulu@8
-# export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
-# Installed by brew install --cask sapmachine11-jdk
-# export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
-# Installed by brew install --cask sapmachine17-jdk
-# export JAVA_17_HOME=$(/usr/libexec/java_home -v17)
-# Installed by brew install openjdk@21
-# export JAVA_21_HOME=$(/usr/libexec/java_home -v21)
-
-# JDKs Env - Only Linux
-export JAVA_8_BREW_HOME='/home/linuxbrew/.linuxbrew/opt/openjdk@8/libexec'
-export JAVA_11_BREW_HOME='/home/linuxbrew/.linuxbrew/opt/openjdk@11/libexec'
-export JAVA_17_BREW_HOME='/home/linuxbrew/.linuxbrew/opt/openjdk@17/libexec'
-export JAVA_21_BREW_HOME='/home/linuxbrew/.linuxbrew/opt/openjdk@21/libexec'
-
-# alias java8='export JAVA_HOME=$JAVA_8_BREW_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
-# alias java11='export JAVA_HOME=$JAVA_11_BREW_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
-# alias java17='export JAVA_HOME=$JAVA_17_BREW_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
-# alias java21='export JAVA_HOME=$JAVA_21_BREW_HOME && export PATH="$JAVA_HOME/bin:$PATH"'
-
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
@@ -153,7 +132,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 # Hybris
 alias antall='java11 && hybrisbin && . ./setantenv.sh && ant all'
 alias fullbuild='java11 && hybrisbin && ./fullbuild.sh'
-alias hybrisdir='cd ~/dev/arezzo/hybris2011/hybris/'
+alias hybrisdir='cd ~/dev/hybris/'
 alias hybrisbin='hybrisdir && cd bin/platform'
 alias hybris='java11 && hybrisbin && ./hybrisserver.sh debug'
 
@@ -168,14 +147,6 @@ alias pecback='java8 && cd ~/dev/unimed/pec/pec-wsclient && mvn clean install -D
 alias peccibuildlog='java8 && cd ~/dev/unimed/pec && mvn clean verify -f pom.xml -U -Dspring.profiles.active=build -Duser.language=pt -Duser.country=BR -Duser.timezone=America/Bahia -l build_ci.log'
 alias peccibuild='java8 && cd ~/dev/unimed/pec && mvn clean verify -f pom.xml -U -Dspring.profiles.active=build -Duser.language=pt -Duser.country=BR -Duser.timezone=America/Bahia'
 
-# My Alias macOS
-# Show/hide hidden files in Finder
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
-# Show/hide icons in Desktop. Use to share screen with privacity
-alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-
 # My Alias general
 alias dev='cd ~/dev'
 alias wakeup='caffeinate -di'
@@ -185,15 +156,10 @@ alias killtomcat="ps -ef | grep -i tomcat | grep -v grep | awk '{ print "kill -9
 # npm install -g http-server
 alias server="http-server -c-1"
 # alias http-server='docker run -p 8000:80 -v $(pwd):/usr/share/nginx/html nginx'
-# Clean memory on Windows because WSL2 has a memory leak problem
-alias limpamem="echo 1 | sudo tee /proc/sys/vm/drop_caches"
-alias ip="ip add" # WSL
 alias sshconnect='sshpass -p "pss" ssh -oStrictHostKeyChecking=no "usr"@"host" -p "port"'
 alias zshconfig="code ~/.zshrc"
 alias clean="git limpa && git branch -vv | grep 'gone]' | awk '{print $1}' | xargs git branch -D"
-alias meld='/Applications/Meld.app/Contents/MacOS/Meld'
 alias k="kubectl"
-alias m2="open ~/.m2"
 alias gitls="sh ~/dev/andressltz/dotfiles/scripts/list_git_projects.sh"
 alias gitbrd="sh ~/dev/andressltz/dotfiles/scripts/remove_deleted_branches.sh"
 
@@ -203,6 +169,15 @@ alias gitbrd="sh ~/dev/andressltz/dotfiles/scripts/remove_deleted_branches.sh"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
-
-# Default
+ZSH_DOTFILES_DIR="${${(%):-%x}:A:h}"
+case "$OSTYPE" in
+  darwin*)
+    source "$ZSH_DOTFILES_DIR/macos.zsh"
+    ;;
+  linux*)
+    source "$ZSH_DOTFILES_DIR/linux.zsh"
+    ;;
+  *)
+    print -u2 "Sistema não suportado pelo ZSH: $OSTYPE"
+    ;;
+esac
