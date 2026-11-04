@@ -7,13 +7,21 @@
 	email = andres@domain.com.br
 [alias]
 	co = checkout
-	br = !sh -c 'git branch $1 && git checkout $1' -
-	brd = !sh -c 'git branch -D $1 && git branch' -
+	st = status
+	br = !sh -c 'git checkout -b $1' -
+	brd = branch -d
+	# br = !sh -c 'git branch $1 && git checkout $1' -
+	# brd = !sh -c 'git branch -D $1 && git branch' -
+# alias to clean
 	limpa = !sh -c 'git fetch --prune && git remote update --prune' -
 	rem = !sh -c 'git reset HEAD $1 && git status' -
+	resethard = reset --hard HEAD
+	cherry = !sh -c 'git cherry-pick $1' -
+# alias to log
 	logg = log --graph --date=short --pretty=format:'%Cred%h %Cblue%ad%Creset |%C(yellow)%d%Creset %s %Cblue[%an]'
-	res = reset --hard HEAD
-	cp = !sh -c 'git cherry-pick $1' -
+	lg = log --pretty=format:"%h - %an, %ar : %s"
+	last = log -1 HEAD
+# tools
 	web-gitlab = "!open \"$(git remote get-url origin | sed -E 's#ssh://git@([^:/]+)(:[0-9]+)?/#https://\\1/#; s#\\.git$##')\""
 	web-github = "!open \"$(git remote get-url origin | sed -E 's#git@([^:]+):#https://\\1/#; s#ssh://git@([^:/]+)(:[0-9]+)?/#https://\\1/#; s#\\.git$##')\""
 [core]
