@@ -33,6 +33,10 @@ function Test-WingetPackageInstalled {
 
     $output = @(& $wingetCommand.Source list --exact --id $PackageId --source winget --accept-source-agreements --disable-interactivity)
     $exitCode = $LASTEXITCODE
+    if ($exitCode -eq -1978335212) {
+        return $false
+    }
+
     if ($exitCode -ne 0) {
         throw "winget list para $PackageId terminou com o codigo de saida $exitCode."
     }
@@ -47,6 +51,23 @@ function Test-WingetPackageInstalled {
 }
 
 $wingetCommand = Get-Command winget.exe -ErrorAction Stop
+
+$explorerAdvancedKey = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced'
+New-ItemProperty -Path $explorerAdvancedKey -Name LaunchTo -Value 1 -PropertyType DWord -Force | Out-Null
+New-ItemProperty -Path $explorerAdvancedKey -Name HideFileExt -Value 0 -PropertyType DWord -Force | Out-Null
+Write-Host 'O Explorador de Arquivos foi configurado para abrir em Este Computador e exibir extensoes.'
+
+Write-Host "`nAtualizando aplicativos da Microsoft Store..."
+Invoke-CheckedCommand -FilePath $wingetCommand.Source -Arguments @(
+    'upgrade'
+    '--all'
+    '--source'
+    'msstore'
+    '--accept-source-agreements'
+    '--accept-package-agreements'
+    '--disable-interactivity'
+)
+
 $packages = @(
     'Git.Git'
     'KeePassXCTeam.KeePassXC'

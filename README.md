@@ -19,7 +19,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
 .\windows.ps1
 ```
 
-O script instala via winget os aplicativos que ainda não estão instalados, configura o Git, instala as fontes Powerline e configura o WSL com Ubuntu. Alguns instaladores podem solicitar confirmação do UAC; o script aguarda a conclusão antes de continuar. A instalação do WSL pode exigir a reinicialização do Windows.
+O script atualiza os aplicativos da Microsoft Store reconhecidos pelo winget, configura o Explorador de Arquivos para abrir em Este Computador e exibir extensões, instala via winget os aplicativos que ainda não estão instalados, configura o Git, instala as fontes Powerline e configura o WSL com Ubuntu. Alguns instaladores podem solicitar confirmação do UAC; o script aguarda a conclusão antes de continuar. Talvez seja necessário reabrir as janelas do Explorador de Arquivos para visualizar as alterações. A instalação do WSL pode exigir a reinicialização do Windows.
 
 Programas para instalação manual no Windows:
 
@@ -30,3 +30,5 @@ Programas para instalação manual no Windows:
 - https://notepad-plus-plus.org/downloads/
 - https://www.postman.com/downloads/
 - https://dbeaver.io/download/
+- https://code.visualstudio.com/thank-you?dv=win64user&build=stable
+- https://www.fortinet.com/br/support/product-downloads
