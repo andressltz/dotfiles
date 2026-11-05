@@ -76,7 +76,7 @@ install_oh_my_zsh() {
         echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"' >> ~/.zshrc
         ;;
     *)
-        title "Sistema não suportado: $OS"
+        title "Unsupported system: $OS"
         exit 1
         ;;
     esac
@@ -116,17 +116,17 @@ fi
 title "Configuring Git"
 
 if [ -f "$HOME/.gitconfig" ]; then
-    echo "📦 Arquivo .gitconfig existente encontrado. Criando backup para .gitconfig.bak..."
+    log "📦 File .gitconfig already exists. Creating backup to .gitconfig.bak..."
     cp ~/.gitconfig ~/.gitconfig.bak
 else
-    echo "ℹ️ Nenhum .gitconfig anterior encontrado. Instalação limpa, pulando backup."
+    log "ℹ️ No previous .gitconfig found. Clean installation, skipping backup."
 fi
 
 if [ -f "$HOME/.gitignore" ]; then
-    echo "📦 Arquivo .gitignore existente encontrado. Criando backup para .gitignore.bak..."
+    log "📦 File .gitignore already exists. Creating backup to .gitignore.bak..."
     cp ~/.gitignore ~/.gitignore.bak
 else
-    echo "ℹ️ Nenhum .gitignore anterior encontrado. Instalação limpa, pulando backup."
+    log "ℹ️ No previous .gitignore found. Clean installation, skipping backup."
 fi
 
 cp .gitconfig ~/.gitconfig

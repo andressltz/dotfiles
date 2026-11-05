@@ -18,7 +18,7 @@ title() {
     echo ""
 }
 
-title "Verificando chaves SSH..."
+title "Verifying SSH keys..."
 SSH_KEY_PATH="$HOME/.ssh/id_rsa"
 
 if [ -d "$HOME/.ssh" ]; then
@@ -28,34 +28,34 @@ else
 fi
 
 if [ ! -f "$SSH_KEY_PATH" ]; then
-    log "🔑 Chave SSH não encontrada. Gerando uma nova..."
+    log "🔑 SSH key not found. Generating a new one..."
     # ssh-keygen -t rsa -C "$EMAIL" -f "$SSH_KEY_PATH" -N ""
     ssh-keygen -t rsa -b 4096 -C "$EMAIL" -f "$SSH_KEY_PATH" -N ""
     eval "$(ssh-agent -s)"
     ssh-add ~/.ssh/id_rsa
-    log "✅ Chave SSH gerada com sucesso!"
+    log "✅ SSH key generated successfully!"
 else
-    log "✅ Chave SSH já existe em $SSH_KEY_PATH. Pulando criação."
+    log "✅ SSH key already exists at $SSH_KEY_PATH. Skipping creation."
 fi
 
 case "$OS" in
     Darwin)
-        title "Configurando ambiente para $OS"
+        title "Configuring environment for $OS"
         ./macos.sh "$EMAIL"
         ;;
     Linux)
-        title "Configurando ambiente para $OS"
+        title "Configuring environment for $OS"
 
         if ! command -v zsh >/dev/null 2>&1; then
             ./linux_bash.sh "$EMAIL"
-            log "Zsh instalado. Abra uma nova sessão e execute o instalador novamente."
+            log "ZSH already installed. Please open a new session and run the installer again."
             exit 0
         fi
 
         exec zsh ./linux_zsh.sh $EMAIL
         ;;
     *)
-        title "Sistema não suportado: $OS"
+        title "Unsupported system: $OS"
         exit 1
         ;;
 esac

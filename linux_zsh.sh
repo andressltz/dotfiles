@@ -18,14 +18,14 @@ title() {
     echo ""
 }
 
-echo "Executando no zsh"
+log "Executing in zsh"
 
 title "Installing Homebrew"
 if command -v brew >/dev/null 2>&1; then
-    log "Homebrew já está instalado."
+    log "Homebrew already installed."
 else
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    
+
     title "Configuring Homebrew on ZSH"
     echo >> ~/.zshrc
     echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"' >> ~/.zshrc
@@ -35,7 +35,7 @@ fi
 title "Installing Docker"
 
 if command -v docker >/dev/null 2>&1; then
-    log "Docker já está instalado."
+    log "Docker already installed."
 else
     curl -fsSL https://get.docker.com -o get-docker.sh
     sudo sh get-docker.sh
@@ -48,20 +48,20 @@ else
 fi
 
 if getent group docker >/dev/null; then
-    log "O grupo docker já existe."
+    log "The docker group already exists."
 else
     sudo groupadd docker
 fi
 
 if id -nG "$USER" | tr ' ' '\n' | grep -qx docker; then
-    log "$USER já pertence ao grupo docker."
+    log "$USER already belongs to the docker group."
 else
     sudo usermod -aG docker "$USER"
-    log "$USER foi adicionado ao grupo docker. Encerre e abra uma nova sessão para aplicar a permissão."
+    log "$USER has been added to the docker group. Please close and reopen your session to apply the changes."
 fi
 
 if ! groups "$USER" | grep -q '\bdocker\b'; then
-    log "Adicionando $USER ao grupo docker"
+    log "Adding $USER to the docker group"
     sudo usermod -aG docker "$USER"
 fi
 
@@ -70,7 +70,7 @@ sudo docker --version
 
 title "Installing SDKMAN"
 if [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]]; then
-    log "SDKMAN já está instalado."
+    log "SDKMAN already installed."
 else
     title "Installing SDKMAN"
     curl -s "https://get.sdkman.io" | zsh

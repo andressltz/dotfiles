@@ -18,11 +18,15 @@ title() {
     echo ""
 }
 
-title "Installing basic dependencies"
+title "Updating system..."
 
 sudo apt update
 sudo apt upgrade -y
+
+title "Installing basic dependencies... [1/2]"
 sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
+
+title "Installing basic dependencies... [2/2]"
 sudo apt-get install -y \
     curl \
     git \
@@ -33,12 +37,12 @@ sudo apt-get install -y \
     build-essential
 
 if [ -n "${BASH_VERSION:-}" ]; then
-    echo "Executando no bash"
+    log "Executing in bash"
 
     title "Installing ZSH"
     if command -v zsh >/dev/null 2>&1; then
         chsh -s $(which zsh)
-        log "ZSH já está instalado."
+        log "ZSH already installed."
     else
         sudo apt install -y zsh
         chsh -s $(which zsh)
