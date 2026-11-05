@@ -55,7 +55,23 @@ $wingetCommand = Get-Command winget.exe -ErrorAction Stop
 $explorerAdvancedKey = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced'
 New-ItemProperty -Path $explorerAdvancedKey -Name LaunchTo -Value 1 -PropertyType DWord -Force | Out-Null
 New-ItemProperty -Path $explorerAdvancedKey -Name HideFileExt -Value 0 -PropertyType DWord -Force | Out-Null
-Write-Host 'O Explorador de Arquivos foi configurado para abrir em Este Computador e exibir extensoes.'
+
+$desktopIcons = @{
+    '{20D04FE0-3AEA-1069-A2D8-08002B30309D}' = 0
+    '{59031A47-3F72-44A7-89C5-5595FE6B30EE}' = 0
+    '{645FF040-5081-101B-9F08-00AA002F954E}' = 0
+}
+$desktopIconKeys = @(
+    'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel'
+    'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu'
+)
+foreach ($key in $desktopIconKeys) {
+    New-Item -Path $key -Force | Out-Null
+    foreach ($icon in $desktopIcons.GetEnumerator()) {
+        New-ItemProperty -Path $key -Name $icon.Key -Value $icon.Value -PropertyType DWord -Force | Out-Null
+    }
+}
+Write-Host 'O Explorador de Arquivos foi configurado para abrir em Este Computador, exibir extensoes e mostrar os icones Pasta do Usuario, Este Computador e Lixeira.'
 
 Write-Host "`nAtualizando aplicativos da Microsoft Store..."
 Invoke-CheckedCommand -FilePath $wingetCommand.Source -Arguments @(
