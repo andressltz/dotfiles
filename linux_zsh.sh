@@ -80,10 +80,10 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk version
 
 title "Installing JAVA with SDKMAN"
-sdk install java 8.0.504+1-zulu
-sdk install java 11.0.32.fx-zulu
-sdk install java 17.0.20.fx-zulu
-sdk install java 21.0.12.fx-zulu
+sdk install java 8.0.512.0+8-zulu
+sdk install java 11.0.33.0+9-zulu
+sdk install java 17.0.21.0+9-zulu
+sdk install java 21.0.13.0+9-zulu
 
 title "Installing Maven with SDKMAN"
 sdk install maven
