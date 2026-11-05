@@ -20,14 +20,14 @@ title() {
 }
 
 install_oh_my_zsh() {
-    
+
     title "Installing Oh My Zsh..."
     if [[ -d "$HOME/.oh-my-zsh" ]]; then
         log "Oh My Zsh already installed."
     else
         RUNZSH=no \
         CHSH=no \
-        sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"        
+        sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     fi
 
     CUSTOM_PATH=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}
@@ -38,7 +38,7 @@ install_oh_my_zsh() {
     title "Installing plugins for Oh My Zsh..."
 
     title "Installing zsh-autosuggestions"
-    
+
     if [[ -d "$CUSTOM_PATH/plugins/zsh-autosuggestions" ]]; then
         log "zsh-autosuggestions already installed."
     else
@@ -50,7 +50,7 @@ install_oh_my_zsh() {
         log "F-Sy-H already installed."
     else
         git clone https://github.com/z-shell/F-Sy-H.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/F-Sy-H
-    fi 
+    fi
 
     title "Installing zsh-completions"
     if [[ -d "$CUSTOM_PATH/plugins/zsh-completions" ]]; then
@@ -68,8 +68,10 @@ install_oh_my_zsh() {
     case "$OS" in
     Darwin)
         echo ""
+        cp macos.zsh ~/macos.zsh
         ;;
     Linux)
+        cp linux.zsh ~/linux.zsh
         echo >> ~/.zshrc
         echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"' >> ~/.zshrc
         ;;
