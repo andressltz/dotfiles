@@ -150,15 +150,32 @@ Write-Host "`nRemovendo arquivos temporarios das fontes..."
 Remove-Item -LiteralPath $fontsDirectory -Recurse -Force -ErrorAction Stop
 
 $wslCommand = Get-Command wsl.exe -ErrorAction Stop
-$installedDistributions = @(
-    & $wslCommand.Source --list --quiet |
-        ForEach-Object { ($_ -replace "`0", '').Trim() } |
-        Where-Object { $_ }
-)
-if ($LASTEXITCODE -ne 0) {
-    throw "wsl --list --quiet terminou com o codigo de saida $LASTEXITCODE."
+
+Write-Host "`nVerificando distribuicoes instaladas no WSL..."
+$previousErrorActionPreference = $ErrorActionPreference
+try {
+    $ErrorActionPreference = 'Continue'
+    $distributionOutput = @(& $wslCommand.Source --list --quiet 2>&1)
+    $listExitCode = $LASTEXITCODE
+} finally {
+    $ErrorActionPreference = $previousErrorActionPreference
 }
 
+if ($listExitCode -eq 0) {
+    $installedDistributions = @(
+        $distributionOutput |
+            ForEach-Object { ($_ -replace "`0", '').Trim() } |
+            Where-Object { $_ }
+    )
+} else {
+    Write-Host "Nao foi possivel listar distribuicoes WSL (codigo de saida $listExitCode). A instalacao do Ubuntu tentara inicializar o WSL."
+    if ($distributionOutput.Count -gt 0) {
+        Write-Host "Saida: $($distributionOutput -join ' ')"
+    }
+    $installedDistributions = @()
+}
+
+Write-Host "`nDistribuicoes instaladas no WSL: $($installedDistributions -join ', ')"
 if ($installedDistributions -contains 'Ubuntu') {
     Write-Host "`nUbuntu no WSL ja esta instalado."
 } else {
