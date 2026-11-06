@@ -30,6 +30,7 @@ title "Installing basic dependencies... [2/2]"
 sudo apt-get install -y \
     curl \
     git \
+    zip \
     unzip \
     procps \
     file \
